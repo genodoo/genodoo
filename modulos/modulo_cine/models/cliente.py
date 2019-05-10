@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class (models.Model):
+class Cliente(models.Model):
 
     _name = 'modulo_cine.cliente'
 
