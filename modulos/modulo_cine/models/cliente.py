@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 
+
 class Cliente(models.Model):
 
     _name = 'modulo_cine.cliente'
@@ -10,7 +11,7 @@ class Cliente(models.Model):
     nombre = fields.Many2one('modulo_cine.reproduccion', 'nombre')
     numero_sala = fields.Many2one('modulo_cine.reproduccion', 'numero_sala')
     fecha = fields.Many2one('modulo_cine.reproduccion', 'fecha')
-    edad = fields.Integer(string = 'Edad')
+    edad = fields.Integer(string='Edad')
 
     _sql_constraints = [
         ('PK5',

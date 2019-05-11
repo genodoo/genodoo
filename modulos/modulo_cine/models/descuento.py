@@ -2,6 +2,7 @@
 
 from odoo import models, fields, api
 
+
 class Descuento(models.Model):
 
     _name = 'modulo_cine.descuento'

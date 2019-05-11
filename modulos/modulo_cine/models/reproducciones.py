@@ -2,13 +2,14 @@
 
 from odoo import models, fields, api
 
+
 class Reproducciones(models.Model):
 
     _name = 'modulo_cine.reproducciones'
 
     nombre = field.One2many('modulo_cine.pelicula', 'nombre')
     numero_sala = fields.One2many('modulo_cine.sala', 'numero_sala')
-    fecha = fields.Date(string='Fecha') 
+    fecha = fields.Date(string='Fecha')
     precio = fields.Float(string='Precio', required=True)
 
     _sql_constraints = [

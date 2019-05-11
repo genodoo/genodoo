@@ -2,12 +2,13 @@
 
 from odoo import models, fields, api
 
+
 class Pelicula(models.Model):
 
     _name = 'modulo_cine.pelicula'
 
     nombre = fields.Char(string='Nombre de la Pelicula', required=True)
-    espectadores = fields.Integer(string='Visualizaciones totales', required=True)
+    espectadores = fields.Integer(string='Visualizaciones', required=True)
     duracion = fields.Integer(string='Duracion en minutos', required=True)
     link = fields.Char(string='IMDB', required=True)
 
