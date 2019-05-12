@@ -1,60 +1,61 @@
 <odoo>
-  <data>
-    <!-- explicit list view definition -->
-    <!--
-    <record model="ir.ui.view" id="modulo_cine.list">
-      <field name="name">modulo_cine list</field>
-      <field name="model">modulo_cine.modulo_cine</field>
+  <data>2
+
+    <!-- Tree view for cine.pelicula -->
+    <record id="pelicula_view_tree" model="ir.ui.view">
+      <field name="name">cine.pelicula.view.tree</field>
+      <field name="model">cine.pelicula</field>
       <field name="arch" type="xml">
         <tree>
           <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="totalViews"/>
+          <field name="duration"/>
+          <field name="link"/>          
         </tree>
       </field>
     </record>
-    -->
 
-    <!-- actions opening views on models -->
-    <!--
-    <record model="ir.actions.act_window" id="modulo_cine.action_window">
-      <field name="name">modulo_cine window</field>
-      <field name="res_model">modulo_cine.modulo_cine</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-    -->
-
-    <!-- server action to the one above -->
-    <!--
-    <record model="ir.actions.server" id="modulo_cine.action_server">
-      <field name="name">modulo_cine server</field>
-      <field name="model_id" ref="model_modulo_cine_modulo_cine"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": self._name,
-        }
+    <!-- Form view for cine.pelicula model -->    
+    <record id="pelicula_view_form" model="ir.ui.view">
+      <field name="name">cine.pelicula.view.form</field>
+      <field name="model">cine.pelicula</field>
+      <field name="arch" type="xml">
+        <form string="">
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="totalViews"/>
+              <field name="duration"/>
+              <field name="link"/>
+            </group>
+          </sheet>
+        </form>
       </field>
     </record>
-    -->
 
-    <!-- Top menu item -->
-    <!--
-    <menuitem name="modulo_cine" id="modulo_cine.menu_root"/>
-    -->
-    <!-- menu categories -->
-    <!--
-    <menuitem name="Menu 1" id="modulo_cine.menu_1" parent="modulo_cine.menu_root"/>
-    <menuitem name="Menu 2" id="modulo_cine.menu_2" parent="modulo_cine.menu_root"/>
-    -->
-    <!-- actions -->
-    <!--
-    <menuitem name="List" id="modulo_cine.menu_1_list" parent="modulo_cine.menu_1"
-              action="modulo_cine.action_window"/>
-    <menuitem name="Server to list" id="modulo_cine" parent="modulo_cine.menu_2"
-              action="modulo_cine.action_server"/>
-    -->
+    <!-- cinema.pelicula action window -->
+    <record id="cine_pelicula_action" model="ir.actions.act_window">
+      <field name="name">cine.pelicula.action</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">cine.pelicula</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="pelicula_view_tree"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Haz click aquí para añadir una nueva película a la cartelera
+        </p>
+      </field>
+    </record>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem id="cinema_main" name="Cinema"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="cinema_sidebar" name="Cine" parent="cinema_main"/>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="cinema_peliculas" name="Cartelera" parent="cinema_sidebar" action="cine_pelicula_action"/>
+
   </data>
 </odoo>

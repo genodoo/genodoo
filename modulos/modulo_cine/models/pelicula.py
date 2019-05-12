@@ -5,12 +5,12 @@ from odoo import models, fields, api
 
 class Pelicula(models.Model):
 
-    _name = 'modulo_cine.pelicula'
+    _name = 'cine.pelicula'
 
-    nombre = fields.Char(string='Nombre de la Pelicula', required=True)
-    espectadores = fields.Integer(string='Visualizaciones', required=True)
-    duracion = fields.Integer(string='Duracion en minutos', required=True)
-    link = fields.Char(string='IMDB', required=True)
+    name = fields.Char(string='Film Name', required=True)
+    totalViews = fields.Integer(string='Total Views', required=True)
+    duration = fields.Integer(string='Duration (Minutes)', required=True)
+    link = fields.Char(string='Info - Link', required=True)
 
     _sql_constraints = [
         ('PK2',

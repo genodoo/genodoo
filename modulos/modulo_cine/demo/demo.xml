@@ -1,5 +1,18 @@
 <odoo>
-    <data>
+        <record model="cine.pelicula" id="pelicula0">
+            <field name="name">The Godfather</field>
+            <field name="totalViews">0</field>
+            <field name="duration">175</field>
+            <field name="link">https://www.filmaffinity.com/es/film809297.html</field>
+        </record>
+
+        <record model="cine.pelicula" id="pelicula1">
+            <field name="name">Cadena Perpetua</field>
+            <field name="totalViews">0</field>
+            <field name="duration">142</field>
+            <field name="link">https://www.filmaffinity.com/es/film161026.html</field>
+        </record>
+
         <!--  -->
         <!--   <record id="object0" model="modulo_cine.modulo_cine"> -->
         <!--     <field name="name">Object 0</field> -->
@@ -26,5 +39,4 @@
         <!--     <field name="value">40</field> -->
         <!--   </record> -->
         <!--  -->
-    </data>
 </odoo>
