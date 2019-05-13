@@ -1,0 +1,123 @@
+<odoo>
+    <data>
+        <template id="reservas">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="website.layout">
+                    <div id="wrap" class="oe_structure oe_empty" style="background-image:url(https://images.alphacoders.com/438/438979.jpg)">
+                    <!-- A partir de aquí empieza tu código -->	
+		      <section class="s_image_text">
+			<div class="container">
+			  <div class="row">
+			    <div class="col-md-6 mt32 mb32" style="background:#e6d7bd;border-style:solid; border-width: 3px; border-color:#f5f5dc">
+			       <form action="" style="margin:10px" method="POST">
+				 <div class="form-group">
+				   <label for="InputName">Nombre</label>
+				   <input type="name" class="form-control" id="InputName" placeholder="Introduce tu nombre"/>                
+				  </div>
+				 <div class="form-group">
+				   <label for="InputNumber">Nombre</label>
+				   <input type="number" class="form-control" id="InputNumber" placeholder="Introduce tu número"/>                
+				  </div>
+				 <div class="form-group">
+				   <label for="exampleInputEmail1">Correo electrónico</label>
+				   <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduce tu correo"/>
+				 </div>
+				 <div class="form-group">
+				   <label for="InputNumCom">Número de comensales</label>
+				   <input type="number" class="form-control" id="InputNumCom" placeholder="Introduce número de comensales"/>
+				 </div>
+				<div class="form-group">
+				    <label for="day_end">Día</label>
+				     <select id="day_end" name="day_end" style="background:white">
+				       <option>1</option>      
+				       <option>2</option>      
+				       <option>3</option>      
+				       <option>4</option>      
+				       <option>5</option>      
+				       <option>6</option>      
+				       <option>7</option>      
+				       <option>8</option>      
+				       <option>9</option>      
+				       <option>10</option>      
+				       <option>11</option>      
+				       <option>12</option>      
+				       <option>13</option>      
+				       <option>14</option>      
+				       <option>15</option>      
+				       <option>16</option>      
+				       <option>17</option>      
+				       <option>18</option>      
+				       <option>19</option>      
+				       <option>20</option>      
+				       <option>21</option>      
+				       <option>22</option>      
+				       <option>23</option>      
+				       <option>24</option>      
+				       <option>25</option>      
+				       <option>26</option>      
+				       <option>27</option>      
+				       <option>28</option>      
+				       <option>29</option>      
+				       <option>30</option>      
+				       <option>31</option>      
+				     </select>
+				     <label for="month_end">Mes</label>
+				     <select id="month_end" name="month_end" style="background:white">
+				       <option>Enero</option>      
+				       <option>Febrero</option>      
+				       <option>Marzo</option>      
+				       <option>Abril</option>      
+				       <option>Mayo</option>      
+				       <option>Junio</option>      
+				       <option>Julio</option>      
+				       <option>Agosto</option>      
+				       <option>Septiembre</option>      
+				       <option>Octubre</option>      
+				       <option>Noviembre</option>      
+				       <option>Diciembre</option>      
+				     </select>
+				     </div>
+				     <div>
+				     <label for="hour">Hora</label>
+				     <select id="hour" name="hour" style="background:white">
+				      <option>13:00</option>
+				       <option>14:00</option>
+				       <option>15:00</option>
+				       <option>16:00</option>
+				       <option>17:00</option>
+				       <option>20:00</option>
+				       <option>21:00</option>
+				       <option>22:00</option>     
+				     </select>
+				</div>
+				 <button type="submit" class="btn btn-primary" style="margin:15px; font-family: Garamond; background: #ff3300; border-width:0px">RESERVAR</button>
+			       </form>
+			    </div>
+			    <div class="col-md-6 mt32 mb32" style="background:#e6d7bd;border-style:solid; border-width: 3px;border-left-width:0px; border-color:#f5f5dc">
+			       <center>
+				   <img src="https://images.vexels.com/media/users/3/135774/isolated/preview/f104abedc2054d342bd0607c2a9c7e8b-cutlery-icon-by-vexels.png" width="226" height="226" />
+			      </center>
+			      <h2 class="o_default_snippet_text" style="font-size: 30px; font-family: Garamond; text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
+				<p class="o_default_snippet_text" style="font-family: Garamond; text-align:center; vertical-align:middle">
+				        Envíanos un formulario de contacto y te responderemos (normalmente en menos de 24 horas)
+				        si hay mesa disponible. En caso de no haberla, te facilitaremos algunas opciones similares.
+				</p>
+			    </div>
+
+			   
+			  </div>
+			</div>
+		      </section>
+                    <!-- Aquí termina tu código -->
+                    </div>
+                </t>
+            </xpath>
+        </template>
+        <record id="reservasid" model="website.page">
+            <field name="name">Reservas</field>
+            <field name="website_published">True</field>
+            <field name="url">/reservas</field>
+            <field name="view_id" ref="reservas"/>
+        </record>
+    </data>
+</odoo>
