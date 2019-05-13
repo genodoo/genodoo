@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
- class reservation(models.Model):
+class reservation(models.Model):
     _name = 'restaurant.reservation'
 
     name = fields.Char()
