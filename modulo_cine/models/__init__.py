@@ -4,4 +4,4 @@
 # from . import descuento
 from . import pelicula
 # from . import reproducciones
-# from . import sala
+from . import sala
