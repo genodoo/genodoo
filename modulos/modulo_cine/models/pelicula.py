@@ -9,7 +9,7 @@ class Pelicula(models.Model):
 
     name = fields.Char(string='Nombre', required=True)
     image = fields.Binary(string='Cartel')
-    total_views = fields.Integer(string='Visualizaciones', required=True, readonly=True)
+    total_views = fields.Integer(string='Visualizaciones', readonly=True)
     duration = fields.Integer(string='Duración (Minutos)', required=True)
     link = fields.Char(string='Más Información', required=True)
 
