@@ -1,8 +1,20 @@
 <odoo>
-  <data>2
+  <data>
+
+    <!-- cine.sala tree view -->
+    <record id="rooms_view_tree" model="ir.ui.view">
+      <field name="name">cine.sala.view.tree</field>
+      <field name="model">cine.sala</field>
+      <field name="arch" type="xml">
+        <tree string="Salas">
+          <field name="room_number"/>
+          <field name="capacity"/>          
+        </tree>
+      </field>
+    </record>
 
     <!-- Tree view for cine.pelicula -->
-    <record id="pelicula_view_tree" model="ir.ui.view">
+    <record id="film_view_tree" model="ir.ui.view">
       <field name="name">cine.pelicula.view.tree</field>
       <field name="model">cine.pelicula</field>
       <field name="arch" type="xml">
@@ -15,8 +27,38 @@
       </field>
     </record>
 
+    <!-- cine.reproducciones tree view -->
+    <record id="playback_view_tree" model="ir.ui.view">
+      <field name="name">cine.reproducciones.view.tree</field>
+      <field name="model">cine.reproducciones</field>
+      <field name="arch" type="xml">
+        <tree string='Sesiones'>
+          <field name="datetime"/>
+          <field name="pelicula_id"/>
+          <field name="sala_id"/>
+          <field name="price"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- cine.sala form view -->
+    <record id="rooms_view_form" model="ir.ui.view">
+      <field name="name">Salas</field>
+      <field name="model">cine.sala</field>
+      <field name="arch" type="xml">
+        <form string="Sala Nº">
+          <sheet>
+            <group>
+              <field name="room_number"/>
+              <field name="capacity"/>    
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
     <!-- Form view for cine.pelicula model -->    
-    <record id="pelicula_view_form" model="ir.ui.view">
+    <record id="film_view_form" model="ir.ui.view">
       <field name="name">cine.pelicula.view.form</field>
       <field name="model">cine.pelicula</field>
       <field name="arch" type="xml">
@@ -34,57 +76,32 @@
       </field>
     </record>
 
-    <!-- cine.sala tree view -->
-    <record id="cinema_room_view_tree" model="ir.ui.view">
-      <field name="name">cine.sala.view.tree</field>
-      <field name="model">cine.sala</field>
+    <!-- cine.reproducciones form view -->
+    <record id="model_name_view_form" model="ir.ui.view">
+      <field name="name">cine.reproducciones.view.form</field>
+      <field name="model">cine.reproducciones</field>
       <field name="arch" type="xml">
-        <tree string="Salas">
-          <field name="room_number"/>
-          <field name="capacity"/>          
-        </tree>
-      </field>
-    </record>
-
-    <!-- cine.sala form view -->
-    <record id="cinema_room_view_form" model="ir.ui.view">
-      <field name="name">Salas</field>
-      <field name="model">cine.sala</field>
-      <field name="arch" type="xml">
-        <form string="Sala Nº">
+        <form string="Sesión">
           <sheet>
             <group>
-              <field name="room_number"/>
-              <field name="capacity"/>    
+              <field name="datetime"/>
+              <field name="pelicula_id"/>
+              <field name="sala_id"/>
+              <field name="price"/>
             </group>
           </sheet>
         </form>
       </field>
     </record>
 
-    <!-- cinema.pelicula action window -->
-    <record id="cinema_film_action" model="ir.actions.act_window">
-      <field name="name">Películas</field>
-      <field name="type">ir.actions.act_window</field>
-      <field name="res_model">cine.pelicula</field>
-      <field name="view_mode">tree,form</field>
-      <field name="view_type">form</field>
-      <field name="view_id" ref="pelicula_view_tree"/>
-      <field name="help" type="html">
-        <p class="oe_view_nocontent_create">
-          Haz click aquí para añadir una nueva película a la cartelera
-        </p>
-      </field>
-    </record>
-
     <!-- cine.sala action window -->
-    <record id="cinema_room_action" model="ir.actions.act_window">
+    <record id="room_action" model="ir.actions.act_window">
       <field name="name">Salas</field>
       <field name="type">ir.actions.act_window</field>
       <field name="res_model">cine.sala</field>
       <field name="view_mode">tree,form</field>
       <field name="view_type">form</field>
-      <field name="view_id" ref="cinema_room_view_tree"/>
+      <field name="view_id" ref="rooms_view_tree"/>
       <field name="help" type="html">
         <p class="oe_view_nocontent_create">
           Haz click aquí para añadir una nueva sala de tu cine
@@ -92,6 +109,36 @@
       </field>
     </record>
 
+    <!-- cinema.pelicula action window -->
+    <record id="film_action" model="ir.actions.act_window">
+      <field name="name">Películas</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">cine.pelicula</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="film_view_tree"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Haz click aquí para añadir una nueva película a la cartelera
+        </p>
+      </field>
+    </record>
+
+    <!-- cine.reproducciones action window -->
+    <record id="cinema_playback_action" model="ir.actions.act_window">
+      <field name="name">Sesiones</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">cine.reproducciones</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="playback_view_tree"/>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+          Haz click aquí para añadir una nueva sesión a tu cine
+        </p>
+      </field>
+    </record>
+    
     <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
     <menuitem id="cinema_main" name="Cinema"/>
 
@@ -99,10 +146,13 @@
     <menuitem id="cinema_sidebar" name="Cine" parent="cinema_main"/>
 
     <!-- This Menu Item must have a parent and an action -->
-    <menuitem id="cinema_peliculas" name="Cartelera" parent="cinema_sidebar" action="cinema_film_action"/>
+    <menuitem id="films" name="Cartelera" parent="cinema_sidebar" action="film_action"/>
 
     <!-- This Menu Item must have a parent and an action -->
-    <menuitem id="_menu_act" name="Salas" parent="cinema_sidebar" action="cinema_room_action"/>
+    <menuitem id="rooms" name="Salas" parent="cinema_sidebar" action="room_action"/>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="playbacks" name="Sesiones" parent="cinema_sidebar" action="cinema_playback_actin"/>
 
   </data>
 </odoo>

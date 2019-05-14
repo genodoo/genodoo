@@ -5,12 +5,12 @@ from odoo import models, fields, api
 
 class Reproducciones(models.Model):
 
-    _name = 'modulo_cine.reproducciones'
+    _name = 'cine.reproducciones'
 
-    nombre = fields.One2many('modulo_cine.pelicula', 'nombre')
-    numero_sala = fields.One2many('modulo_cine.sala', 'numero_sala')
-    fecha = fields.Date(string='Fecha')
-    precio = fields.Float(string='Precio', required=True)
+    datetime = fields.datetime(string='Fecha', required='true', index)
+    pelicula_id = fields.Many2one(comodel_name='cine.pelicula', string='Película', ondelete='set null', required='true')
+    sala_id = fields.Many2one(comodel_name='cine.sala', string='Sala', ondelete='set null', required='true')
+    price = fields.Integer(string='Precio', required='true')
 
     _sql_constraints = [
         ('PK4',
