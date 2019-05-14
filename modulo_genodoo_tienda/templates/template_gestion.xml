@@ -1,0 +1,104 @@
+<odoo>
+	<data>
+		<template id="Shop_GenOdoo" inherit_id="website_sale.product"><!--website_sale.product-->
+			<xpath expr="//div[@id='wrap']" position="replace">
+				 <div id="wrap" class="oe_structure oe_empty">
+			<!--Aquí empieza tu código -->
+			<div id="wrap" class="oe_structure oe_empty">
+		        <section class="s_title bg-warning" style="">
+		          <div class="container">
+		            <div class="row">
+		              <div class="col-md-12">
+		                <h1 class="text-center">Tienda<br/></h1>
+		                <h3 class="text-center text-muted">&amp;nbsp; <font style="font-size: 24px;">Desde aquí puedes navegar entre los distintos módulos</font></h3>
+		              </div>
+		            </div>
+		          </div>
+		        </section>
+		        <section class="s_image_text mt0 mb0" style="">
+		          <div class="container">
+		            <div class="row">
+		              <div class="mt48 col-md-3 col-md-offset-2 mb32">
+		                <a href="/1-modulo-tienda">
+		                  <img src="/web/image/548/tienda.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                </a>
+		              </div>
+		              <div class="col-md-6 mb16 mt48">
+		                <h3> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a href="/1-modulo-tienda" style="color:black;">Módulo tienda</a><br/></h3>
+		                <p style="text-align: left;"> Este fantástico módulo le permitirá montar una tienda online con una inversión de tiempo, esfuerzo y dinero mínima. La tienda online incluye una página web principal, una de productos y otra para cada producto.<br/></p>
+		                <p style="text-align: left;">El precio y opciones incluidas depende de la tarifa que se escoja:</p>
+		                <span/>
+		                <p>
+		                  <a href="/1-modulo-tienda" class="mt8 pull-right" data-original-title="" title=""> </a>
+		                  <a href="/1-modulo-tienda" style="margin:10px" class="mt8 pull-left btn btn-primary" data-original-title="" title="">Básico 1.249€</a>
+		                  <a href="/1-modulo-tienda" style="margin:10px" class="mt8 pull-left btn btn-primary" data-original-title="" title="">Avanzado 2.599€</a>
+		                  <a href="/1-modulo-tienda" style="margin:10px" class="mt8 pull-left btn btn-primary" data-original-title="" title="">Experto 3.749€</a>
+		                </p>
+		              </div>
+		            </div>
+		          </div>
+		        </section>
+		        <section class="s_text_image mt0">
+		          <div class="container">
+		            <div class="row"><div class="col-md-6 col-md-offset-1 mb0 mt0"><h3 style="text-align: right;"><a href="/2-modulo-cine" style="color:black;">Módulo cine</a>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<br/></h3><p style="text-align: right;"> Este magnífico módulo permite tener informatizado y personalizado en muy poco una empresa de cine. El módulo permite tener una páginas web con la cartelera, sesiones disponibles, compra de entradas online y aplicar ofertas.<br/></p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Experto 5.199€</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Avanzado 3.599</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Básico 1.499€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/2-modulo-cine"><img class="img img-responsive pull-left mb16" src="/web/image/550/cine.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
+		          </div>
+		        </section>
+		        <section class="s_image_text mb0 mt0" style="">
+		          <div class="container">
+		            <div class="row">
+		              <div class="mb0 col-md-3 col-md-offset-2 mt0">
+		                <a href="/3-modulo-hotel">
+		                  <img src="/web/image/549/hotel.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                </a>
+		              </div>
+		              <div class="col-md-6 mb48 mt8">
+		                <h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a href="/3-modulo-hotel" style="color:black;">Módulo hotel</a><br/></h3>
+		                <p>Este gran módulo incluye la gestión de las reservas de habitaciones con los días y precios estimados. En caso de tener servicio de restauración se puede implementar junto al Módulo restaurante.<br/></p>
+		                <p>El precio y opciones incluidas depende de la tarifa que se escoja:</p>
+		                <p>
+		                  <a href="/3-modulo-hotel" class="mt8 pull-right" data-original-title="" title=""> </a>
+		                  <a href="/3-modulo-hotel" style="margin:10px" class="mt8 pull-left btn btn-success" data-original-title="" title="">Básico 1.599€</a>
+		                  <a href="/3-modulo-hotel" style="margin:10px" class="mt8 pull-left btn btn-success" data-original-title="" title="">Avanzado 3.299€</a>
+		                  <a href="/3-modulo-hotel" style="margin:10px" class="mt8 pull-left btn btn-success" data-original-title="" title="">Experto 4.799€</a>
+		                </p>
+		              </div>
+		            </div>
+		          </div>
+		        </section>
+		        <section class="s_text_image mt0">
+		          <div class="container">
+		            <div class="row"><div class="col-md-6 col-md-offset-1 mb0 mt0"><h3 style="text-align: right;"><a href="/4-modulo-restaurante" style="color:black;">Módulo restaurante</a> &amp;nbsp;&amp;nbsp; <br/>
+		                    </h3><p style="text-align: right;"> Este módulo permite la gestión de los proveedores y pedidos a los mismos, TPV y una página web de reservas ampliable para contener también cualquier otro tipo de información que se desee del restaurante. <br/>
+		                    </p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Experto 4.599€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Avanzado 3.199€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Básico 1.399€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/4-modulo-restaurante"><img class="img img-responsive pull-left mb16" src="/web/image/551/restaurante.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
+		          </div>
+		        </section>
+		        <section class="s_image_text mt0 mb0" style="">
+		          <div class="container">
+		            <div class="row">
+		              <div class="mb0 col-md-3 col-md-offset-2 mt0">
+		                <a href="5-modulo-personalizado">
+		                  <img src="/web/image/552/personalizado.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                </a>
+		              </div>
+		              <div class="col-md-6 mb48 mt8">
+		                <h3>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a href="5-modulo-personalizado" style="color:black;">Módulo personalizado</a><br/></h3>
+		                <p>Un módulo único completamente personalizado para ti. Nadie más trabajará como tú, te distinguirás de los demás y marcarás la diferencia.<br/></p>
+		                <p>El precio y opciones incluidas depende de la tarifa que se escoja:</p>
+		                <p>
+		                  <a href="5-modulo-personalizado" class="mt8 pull-right" data-original-title="" title=""> </a>
+		                  <a href="/5-modulo-personalizado" style="margin:10px" class="mt8 pull-left btn btn-beta" data-original-title="" title=""> Básico 1.699€</a>
+		                </p>
+		                <a href="/5-modulo-personalizado" style="margin:10px" class="mt8 pull-left btn btn-beta" data-original-title="" title="">Avanzado 3.699€</a>
+		                <a href="/5-modulo-personalizado" style="margin:10px" class="mt8 pull-left btn btn-beta" data-original-title="" title="">Experto 5.990€</a>
+		                <p/>
+		              </div>
+		            </div>
+		          </div>
+		        </section>
+		      </div>
+				<!-- Aquí acaba tu código -->
+				</div>
+			</xpath>
+		</template>
+	</data>
+</odoo>
