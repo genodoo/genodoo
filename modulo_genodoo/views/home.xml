@@ -60,32 +60,32 @@
 		<div class="container">
 		  <div class="row">
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/334/tienda.png" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/tienda.png" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">TIENDA</h4>
 		      <p>Con el módulo tienda, tus clientes tendrán acceso a una web elegante y atractiva de venta de cualquier producto. Además, el sistema de Odoo te permitirá tener un control sobre stock, ventas y comportamientos del cliente.<br/></p>
 		    </div>
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/329/cine.png" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/cine.png" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">CINE</h4>
 		      <p>Con el módulo cine, tu sitio web lucirá como una cartelera de cine, con acceso a reserva de entradas, bonos de descuento y promociones, compra de tickets. El administrador tendrá acceso a una vista de cada sala y las butacas reservadas en cada una.<br/></p>
 		    </div>
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/331/hotel.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/hotel.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">HOTEL<br/></h4>
 		      <p>Reserva de habitaciones, servicios ofrecidos por el hotel, servicio al cliente inmediato...Todo esto y más es lo que ofrecemos mediante el módulo Hotel, con el cual el cliente no tendrá problemas a la hora de reservar un alojamiento.<br/></p>
 		    </div>
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/333/restaurante.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/restaurante.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">RESTAURANTE</h4>
 		      <p>El módulo restaurante te ofrece todo lo que un restaurante podría necesitar. Para el cliente, disponemos de una página web para reservar mesas, consultar menús y horarios, etc. El administrador dispondrá del control absoluto del restaurante en un sencillo sistema de manejo.<br/></p>
 		    </div>
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/394/academia_comingsoon.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/academia_comingsoon.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">ACADEMIA</h4>
 		      <p>Maneja todos los servicios ofrecidos por tu academia en procedimientos fáciles y al alcance de todos. Pídenos que adaptemos el módulo a tu colegio, instituto o universidad. Todo es más fácil cuando tienes disponible cualquier información en el sistema.<br/></p>
 		    </div>
 		    <div class="mt32 mb48 col-md-2">
-		      <img class="img img-responsive" src="/web/image/332/personalizado.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/personalizado.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
 		      <h4 class="mt16" style="text-align: center;">PERSONALIZADO</h4>
 		      <p>Imagina tu negocio siendo manejado con un sencillo, rápido y eficaz sistema. Imagina disponer de un atractivo Sitio Web para tus clientes, con todo lo necesario para ti.<br/>Te ofrecemos un módulo completamente personalizado para ti, para hacer realidad lo que parece un sueño.<br/></p>
 		    </div>
@@ -97,7 +97,7 @@
 		  <div class="row">
 		    <div class="col-md-9">
 		      <p class="mb0">
-		        <img src="/web/image/335/9ED8832.png" style="width: 25%;" class="pull-left" data-original-title="" title=""/>
+		        <img src="/modulo_genodoo/static/src/img/contact.png" style="width: 25%;" class="pull-left" data-original-title="" title=""/>
 		        <strong>
 		          <br/>
 		        </strong>
@@ -136,7 +136,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/341/Sin%20t%C3%ADtulo-1%20(2).png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/pepe.png" style="width:128px;height:128px" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>José Márquez, CTO<br/></h4>
@@ -147,7 +147,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/349/Pablo.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/pablo.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Pablo Rodríguez, Director de desarrollo<br/></h4>
@@ -158,7 +158,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/350/Francis.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/francis.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Francis Molina, UX<br/></h4>
@@ -169,7 +169,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/355/%C3%81lex.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/alex.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Álex Luque, Front-end<br/></h4>
@@ -180,7 +180,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/343/Carmen.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/carmen.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Carmen Vílchez, Front-end<br/></h4>
@@ -191,7 +191,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/351/Fernando.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/fernando.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Fernando Ramírez, Back-end<br/></h4>
@@ -202,7 +202,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/396/%C3%81ngel%20(3).png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/angel.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Ángel Martín, Back-end<br/></h4>
@@ -213,7 +213,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/354/H%C3%A9ctor.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/hector.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Hector Romero, Back-end<br/></h4>
@@ -224,7 +224,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/353/Juan%20Pedro.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/juanpedro.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Juan Pedro Muñoz, Back-end<br/></h4>
@@ -235,7 +235,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/346/%C3%81lvaro.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/alvaro.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Álvaro Prieto, Back-end<br/></h4>
@@ -246,7 +246,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/357/Gonzalo%20(2).png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/gonzalo.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Gonzalo Reyes, Diseño<br/></h4>
@@ -257,7 +257,7 @@
 		    <div class="col-md-6 mb32">
 		      <div class="row s_no_resize_cols">
 		        <div class="col-md-4">
-		          <img src="/web/image/347/Tony.png" class="img-responsive img-circle center-block shadow"/>
+		          <img src="/modulo_genodoo/static/src/img/tony.png" class="img-responsive img-circle center-block shadow"/>
 		        </div>
 		        <div class="col-md-8">
 		          <h4>Antonio Muñoz, Diseño<br/></h4>
