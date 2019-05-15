@@ -6,8 +6,7 @@
        Módulo para administrar un hotel""",
 
     'description': """
-       Este módulo te instalará las funcionalidades básicas para administrar tu hotel, así como el sitio web y
-	el formulario de reservas.
+       Este módulo te instalará las funcionalidades básicas para administrar tu hotel, así como el sitio web y el formulario de reservas.
     """,
 
     'author': "The GenOdoo Team",
