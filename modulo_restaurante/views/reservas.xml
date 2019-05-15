@@ -96,7 +96,7 @@
 									</div>
 									<div class="col-md-6 mt32 mb32" style="background:#e6d7bd;border-style:solid; border-width: 3px;border-left-width:0px; border-color:#f5f5dc">
 										<center>
-											<img src="https://images.vexels.com/media/users/3/135774/isolated/preview/f104abedc2054d342bd0607c2a9c7e8b-cutlery-icon-by-vexels.png" width="226" height="226" />
+											<img class="img img-responsive" src="https://images.vexels.com/media/users/3/135774/isolated/preview/f104abedc2054d342bd0607c2a9c7e8b-cutlery-icon-by-vexels.png" width="226" height="226" />
 										</center>
 										<h2 class="o_default_snippet_text" style="font-size: 30px; font-family: Garamond; text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
 										<p class="o_default_snippet_text" style="font-family: Garamond; text-align:center; vertical-align:middle">
