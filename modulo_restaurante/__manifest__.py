@@ -26,6 +26,7 @@
         'views/views.xml',
         'views/thanks.xml',
         'views/reservas.xml',
+        'views/home.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

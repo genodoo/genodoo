@@ -9,7 +9,7 @@
         <tree string="Reservas">
           <field name="client_name"/>
           <field name="phone_number"/>
-          <field name="">        
+          <field name="diners"/>        
           <field name="day"/>  
         </tree>
       </field>
