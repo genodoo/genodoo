@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from odoo import http, models
+from odoo import http, models, fields
 from datetime import datetime
 
 
@@ -15,7 +15,13 @@ class RestaurantController(http.Controller):
             str(datetime.today().year),
             kw['hour']])
         date_obj = datetime.strptime(date_str, "%d,%m,%Y,%H:%M")
-        print(date_obj)
+        date_str = fields.Datetime.to_string(date_obj)
+        http.request.env['restaurant.reservation'].create({
+            'client_name':kw['client_name'],
+            'client_email':kw['client_email'],
+            'day':date_str,
+            'phone_number':kw['phone_number'],
+            'diners':kw['number_diners']
+        })
         
-        response = http.request.render('modulo_restaurante.thanks', lazy=False)
-        return response
+        return http.request.render('modulo_restaurante.thanks', lazy=False)
