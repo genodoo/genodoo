@@ -9,8 +9,8 @@
        Administra tu tienda con este módulo, que incluye todo lo que necesitas para tu negocio, hasta el Sitio Web.
     """,
 
-    'author': "rexuswolf",
-    'website': "github.com/rexuswolf",
+    'author': "The GenOdoo Team",
+    'website': "github.com/genodoo",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
