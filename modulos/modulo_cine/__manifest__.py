@@ -14,7 +14,7 @@
     'category': 'Sales, Specific Industry Applications, Website',
     'version': '0.1',
 
-    'depends': ['base'],
+    'depends': ['base', 'sale_management'],
 
     # always loaded
     'data': [

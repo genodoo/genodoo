@@ -23,7 +23,13 @@ class Reproducciones(models.Model):
         data = {
             'image': self.pelicula_id.image,
             'display_name': str(self.pelicula_id.name) + ' ' + str(self.datetime),
-            'list_price': self.price
+            'type': "consu",
+            'categ_id': 1,
+            'sale_ok': True,
+            'purchase_ok': False,
+            'name': str(self.pelicula_id.name) + ' ' + str(self.datetime),
+            'list_price': self.price,
+            'standard_price': self.price
         }
         self.env["product.template"].create(data)
         return super(Reproducciones, self).create(values)
