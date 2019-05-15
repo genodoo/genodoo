@@ -17,4 +17,10 @@ class Reproducciones(models.Model):
          'UNIQUE(nombre, numero_sala, fecha)',
          "La reproduccion no puede ser la misma"),
         ]
+
+    @api.model
+    def create(self, values):
+        self.env["product.template"].create(data)
+        return super(Reproducciones, self).create(values)
+    
     
