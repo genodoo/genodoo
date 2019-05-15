@@ -6,7 +6,8 @@
       <field name="name">cine.sala.view.tree</field>
       <field name="model">cine.sala</field>
       <field name="arch" type="xml">
-        <tree string="Salas">
+        <tree string="Salas" editable="top">
+          <field name="name"/>
           <field name="room_number"/>
           <field name="capacity"/>          
         </tree>
@@ -49,6 +50,7 @@
         <form string="Sala Nº">
           <sheet>
             <group>
+              <field name="name"/>
               <field name="room_number"/>
               <field name="capacity"/>    
             </group>
@@ -152,7 +154,7 @@
     <menuitem id="rooms" name="Salas" parent="cinema_sidebar" action="room_action"/>
 
     <!-- This Menu Item must have a parent and an action -->
-    <menuitem id="playbacks" name="Sesiones" parent="cinema_sidebar" action="cinema_playback_actin"/>
+    <menuitem id="playbacks" name="Sesiones" parent="cinema_sidebar" action="cinema_playback_action"/>
 
   </data>
 </odoo>
