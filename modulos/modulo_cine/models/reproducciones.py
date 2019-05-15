@@ -10,7 +10,7 @@ class Reproducciones(models.Model):
     datetime = fields.Datetime(string='Fecha', required=True)
     pelicula_id = fields.Many2one(comodel_name='cine.pelicula', string='Película', required=True)
     sala_id = fields.Many2one(comodel_name='cine.sala', string='Sala', required=True)
-    price = fields.Integer(string='Precio', required=True)
+    price = fields.Float(string='Precio', required=True)
 
     _sql_constraints = [
         ('PK4',
@@ -20,7 +20,12 @@ class Reproducciones(models.Model):
 
     @api.model
     def create(self, values):
+        data = {
+            'categ_id':
+            'image': self.pelicula_id.image
+            'display_name': self.pelicula_id.name + ' ' + str(self.datetime)
+            'list_price': self.price
+        }
         self.env["product.template"].create(data)
         return super(Reproducciones, self).create(values)
-    
     
