@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+
+    <!-- cine.sala tree view -->
+    <record id="reservations_view_tree" model="ir.ui.view">
+      <field name="name">restaurant.reservation.view.tree</field>
+      <field name="model">restaurant.reservation</field>
+      <field name="arch" type="xml">
+        <tree string="Reservas">
+          <field name="client_name"/>
+          <field name="phone_number"/>
+          <field name="">        
+          <field name="day"/>  
+        </tree>
+      </field>
+    </record>
+
+    <record id="reservations_action" model="ir.actions.act_window">
+      <field name="name">Reservas</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">restaurant.reservation</field>
+      <field name="view_mode">tree</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="reservations_view_tree"/>
+      
+</record>
+     <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+  <menuitem id="restaurant_main" name="Restaurant"/>
+  <menuitem id="restaurant_sidebar" name="Management" parent="restaurant_main"/>
+  <menuitem id="reservations" name="Reservations" parent="restaurant_sidebar" action="reservations_action"/>
+  
+  </data>
+</odoo>
