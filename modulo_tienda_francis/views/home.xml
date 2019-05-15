@@ -1,6 +1,6 @@
 <odoo>
     <data>
-        <template id="home" inherit_id="website.homepage">
+        <template id="Home" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
                <div id="wrap" class="oe_structure oe_empty">
                <!-- A partir de aquí empieza tu código -->

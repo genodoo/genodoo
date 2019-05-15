@@ -1,38 +1,20 @@
-# -*- coding: utf-8 -*-
 {
-    'name': "GenOdoo Tienda",
-
-    'summary': """
-       Módulo para administrar tu tienda""",
-
-    'description': """
-       Administra tu tienda con este módulo, que incluye todo lo que necesitas para tu negocio, hasta el Sitio Web.
-    """,
-
-    'author': "The GenOdoo Team",
-    'website': "github.com/genodoo",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
-    # for the full list
-    'category': 'Comercio',
-    'version': '1.0.0',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-    'depends': ['website'],
-    'depends': ['website_sale'],
-
-    # always loaded
+    'name': 'GenOdoo Shop',
+    'category': 'Website',
+    'sequence': 55,
+    'summary': 'Sell Your Products Online',
+    'author': 'The GenOdoo Team',
+    'website': 'https://www.odoo.com/page/e-commerce',
+    'version': '1.0',
+    'description': "",
+    'depends': ['website', 'website_sale','sale_payment', 'website_payment', 'website_mail', 'website_form', 'website_rating'],
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
         'views/home.xml',
-        'views/tienda.xml',
     ],
-    # only loaded in demonstration mode
     'demo': [
-        'demo/demo.xml',
+        'data/demo.xml',
     ],
+    'qweb': ['static/src/xml/*.xml'],
+    'installable': True,
+    'application': True,
 }
