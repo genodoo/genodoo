@@ -3,14 +3,10 @@
     'name': "GenOdoo Tienda",
 
     'summary': """
-       Importa tus estilos de páginas web mediante este módulo""",
+       Módulo para administrar tu tienda""",
 
     'description': """
-       Mediante este módulo podemos importar templates como vistas en nuestro Sitio Web,
-       consiguiendo así transportar nuestros diseños de páginas web creadas con la herramienta
-       Drag & Drop que nos proporciona Odoo.
-       Además, dispone de dos plantillas, una para modificar la página inicial del Sitio Web
-       y otra para crear una nueva página con el estilo que queramos.
+       Administra tu tienda con este módulo, que incluye todo lo que necesitas para tu negocio, hasta el Sitio Web.
     """,
 
     'author': "rexuswolf",
@@ -20,7 +16,7 @@
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
     'category': 'Comercio',
-    'version': '1.0.1',
+    'version': '1.0.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
