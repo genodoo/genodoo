@@ -14,19 +14,17 @@
     'category': 'Diseño',
     'version': '1.0',
 
-    'depends': ['base', 'website_sale'],
+    'depends': ['base', 'website', 'website_sale'],
 
     # always loaded
     'data': [
-	#'templates/views.xml',
-        #'templates/templates.xml',
-	'templates/template_gestion.xml'
-	#'templates/view_formulario.xml'	
-	#'templates/template_cine.xml'
-	#'templates/template_hotel.xml'
-	#'templates/template_personalizado.xml'
-	#'templates/template_restaurante.xml'
-	#'templates/template_tienda.xml'
+	'templates/template_gestion.xml',
+	#'templates/view_formulario.xml',
+	'templates/template_cine.xml',
+	'templates/template_hotel.xml',
+	'templates/template_personalizado.xml',
+	'templates/template_restaurante.xml',
+	'templates/template_tienda.xml',
 	#'security/ir.model.access.csv',
     ],
 }
