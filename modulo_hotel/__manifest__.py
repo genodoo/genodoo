@@ -1,26 +1,23 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Viewtractor",
+    'name': "GenOdoo Hotel",
 
     'summary': """
-       Importa tus estilos de páginas web mediante este módulo""",
+       Módulo para administrar un hotel""",
 
     'description': """
-       Mediante este módulo podemos importar templates como vistas en nuestro Sitio Web,
-       consiguiendo así transportar nuestros diseños de páginas web creadas con la herramienta
-       Drag & Drop que nos proporciona Odoo.
-       Además, dispone de dos plantillas, una para modificar la página inicial del Sitio Web
-       y otra para crear una nueva página con el estilo que queramos.
+       Este módulo te instalará las funcionalidades básicas para administrar tu hotel, así como el sitio web y
+	el formulario de reservas.
     """,
 
-    'author': "rexuswolf",
-    'website': "github.com/rexuswolf",
+    'author': "The GenOdoo Team",
+    'website': "github.com/genodoo",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/11.0/odoo/addons/base/module/module_data.xml
     # for the full list
-    'category': 'Diseño',
-    'version': '1.0.1',
+    'category': 'Comercio',
+    'version': '1.0.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base'],
