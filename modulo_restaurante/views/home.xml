@@ -1,9 +1,9 @@
 <odoo>
 	<data>
-		<template id="reservas">
+		<template id="home">
 			<xpath expr="//div[@id='wrap']" position="replace">
 				<t t-call="website.layout">
-					<div id="wrap" class="oe_structure" style="background-image:url(/modulo_restaurante/static/src/img/gfork.jpg);height:100%">
+					<div id="wrap" class="oe_structure" style="background-image:url(/modulo_restaurante/static/src/img/gfork.jpg);width:100%">
 						<!-- A partir de aquí empieza tu código -->
 						<section class="s_image_text">
 							<div class="container">
@@ -21,11 +21,11 @@
 				</t>
 			</xpath>
 		</template>
-		<record id="reservasid" model="website.page">
-			<field name="name">Restaurante GFork</field>
+		<record id="homeid" model="website.page">
+			<field name="name">Homepage</field>
 			<field name="website_published">True</field>
 			<field name="url">/home</field>
-			
+			<field name="view_id" ref="home"/>
 		</record>
 	</data>
 </odoo>

@@ -4,8 +4,19 @@ from datetime import datetime
 
 
 class RestaurantController(http.Controller):
+    
+    # @http.route('/patata', type='http', auth='public', methods=['GET', 'POST'], website=True)
+    # def  ReservationPage(self, **kw):
+    #     return http.request.render('modulo_restaurante.thanks')
+
+
+    # @http.route('/reservas', type='http', auth='public', methods=['GET'], website=True)
+    # def  ReservationPage(self, **kw):
+    #     return http.request.render('modulo_restaurante.reservas')
+
+
     @http.route('/reservas/submit', type='http', auth='public', methods=['POST'], website=True)
-    def make_reservation(self, **kw):
+    def MakeReservation(self, **kw):
         month_translate = {'Enero':'01', 'Febrero':'02', 'Marzo':'03', 
         'Abril':'04', 'Mayo':'05', 'Junio':'06', 'Julio':'07', 'Agosto':'08', 
         'Septiembre':'09', 'Octubre':'10', 'Noviembre':'11', 'Diciembre':'12'}
@@ -24,4 +35,4 @@ class RestaurantController(http.Controller):
             'diners':kw['number_diners']
         })
         
-        return http.request.render('modulo_restaurante.thanks', lazy=False)
+        return http.request.render('modulo_restaurante.thanks')
