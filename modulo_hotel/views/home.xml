@@ -1,0 +1,129 @@
+<odoo>
+    <data>
+        <template id="Home" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+               <div id="wrap" class="oe_structure oe_empty">
+               <!-- A partir de aquí empieza tu código -->
+		<section class="s_big_picture bg-gray-lighter">
+		<div class="container">
+		  <h2 class="text-center">Hotel GenOdoo</h2>
+		  <div class="row">
+		    <div class="col-md-12">
+		      <img class="img img-responsive" src="https://sevilla.abc.es/media/andalucia/2018/11/23/s/infografia-cordoba-hoteles-kqJF--620x349@abc.jpg" style="margin: 0 auto;" alt="Odoo CMS - una imagen grande" data-original-title="" title=""/>
+		    </div>
+		    <div class="col-md-6 col-md-offset-3 mb16 mt16">
+		      <p class="text-center"><b>&amp;nbsp;</b> Elija una imagen vibrante y escriba un texto inspirador acerca de ella. No tiene por qué ser largo, pero ha de servir para reforzar su imagen.</p>
+		      <p class="text-center">
+			<a href="/contactus" data-original-title="" title="">
+			  <br/>
+			</a>
+		      </p>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="jumbotron s_button bg-white" style="">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-offset-2 col-md-5">
+		      <a href="/contratar_hotel" class="pull-right mt8 btn btn-warning btn-lg" data-original-title="" title="">Reserve su habitación<i class="fa fa-chevron-right" data-original-title="" title=""/></a>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="s_features">
+		<div class="container">
+		  <div class="row mt16 mb16">
+		    <div class="col-md-4 text-center">
+		      <span class="fa fa-suitcase fa-5x"/>
+		      <div>
+			<h3 class="mt8 mb0 o_default_snippet_text">Primera característica</h3>
+			<p class="text-muted o_default_snippet_text">Cuente cuál es el valor para el <br/>cliente de esta característica.</p>
+		      </div>
+		    </div>
+		    <div class="col-md-4 text-center">
+		      <span class="fa fa-lock fa-5x"/>
+		      <div>
+			<h3 class="mt8 mb0 o_default_snippet_text">Segunda característica</h3>
+			<p class="text-muted">Escriba lo que el cliente desea conocer,<br/>no lo que quiera mostrar.</p>
+		      </div>
+		    </div>
+		    <div class="col-md-4 text-center">
+		      <span class="fa fa-heart fa-5x" data-original-title="" title=""/>
+		      <div>
+			<h3 class="mt8 mb0 o_default_snippet_text">Tercera característica</h3>
+			<p class="text-muted o_default_snippet_text">Una pequeña explicación de esta gran<br/>característica, en palabras clara.</p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="s_feature_grid">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-5 col-md-offset-1">
+		      <div class="row">
+			<div class="col-md-12 mt16 mb16">
+			  <h3 class="mb0 o_default_snippet_text">Lista de características</h3>
+			  <h5 class="text-muted mb16 o_default_snippet_text">Añadir un gran eslógan</h5>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-comment pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Cambiar iconos</h4>
+			  <p class="o_default_snippet_text">Pulse en el icono para adaptarlo a su características</p>
+			  <br/>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-columns pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Duplicar</h4>
+			  <p class="o_default_snippet_text">Duplique bloque para añadir más características.</p>
+			  <br/>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-user pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Eliminar bloques</h4>
+			  <p class="o_default_snippet_text">Seleccione y elimine bloques para eliminar algunas características.</p>
+			  <br/>
+			</div>
+		      </div>
+		    </div>
+		    <div class="col-md-5">
+		      <div class="row">
+			<div class="col-md-12 mt16 mb16">
+			  <h3 class="mb0 o_default_snippet_text">Segunda lista</h3>
+			  <h5 class="text-muted mb16 o_default_snippet_text">Añadir un gran eslógan</h5>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-magic pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Gran valor</h4>
+			  <p class="o_default_snippet_text">Cuente características que el visitante quiera conocer, no lo que le gustaría decir.</p>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-bolt pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Cambiar fondo</h4>
+			  <p class="o_default_snippet_text">Desde el contenedor principal, puede cambiar el fondo para destacar características.</p>
+			</div>
+			<div class="col-md-12">
+			  <span style="min-width: 45px" class="fa fa-2x fa-picture-o pull-left mb16"/>
+			  <h4 class="mt0 mb0 o_default_snippet_text">Imágenes de muestra</h4>
+			  <p class="o_default_snippet_text">Todos estos iconos tienen licencia Creative Commons, por lo que puede usarlos.</p>
+			</div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg" style="background-image: none;" data-scroll-background-ratio="1.6">
+		<span class="s_parallax_bg oe_custom_bg" style="background-image: url(&quot;http://localhost:8069/web/image/website.s_parallax_slider_default_image&quot;); top: -144.48px; bottom: -144.48px; transform: translateY(138px);"/>
+		<div>
+		  <div>
+		    <div class="oe_structure"/>
+		  </div>
+		</div>
+	      </section>
+               <!-- Aquí termina tu código -->
+              </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
