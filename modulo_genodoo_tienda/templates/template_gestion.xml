@@ -20,7 +20,7 @@
 		            <div class="row">
 		              <div class="mt48 col-md-3 col-md-offset-2 mb32">
 		                <a href="/1-modulo-tienda">
-		                  <img src="/web/image/548/tienda.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                  <img src='/modulo_genodoo_tienda/static/src/img/tienda.png' class="center-block padding-medium img-rounded" data-original-title="" title=""/>
 		                </a>
 		              </div>
 		              <div class="col-md-6 mb16 mt48">
@@ -40,7 +40,7 @@
 		        </section>
 		        <section class="s_text_image mt0">
 		          <div class="container">
-		            <div class="row"><div class="col-md-6 col-md-offset-1 mb0 mt0"><h3 style="text-align: right;"><a href="/2-modulo-cine" style="color:black;">Módulo cine</a>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<br/></h3><p style="text-align: right;"> Este magnífico módulo permite tener informatizado y personalizado en muy poco una empresa de cine. El módulo permite tener una páginas web con la cartelera, sesiones disponibles, compra de entradas online y aplicar ofertas.<br/></p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Experto 5.199€</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Avanzado 3.599</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Básico 1.499€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/2-modulo-cine"><img class="img img-responsive pull-left mb16" src="/web/image/550/cine.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
+		            <div class="row"><div class="col-md-6 col-md-offset-1 mb0 mt0"><h3 style="text-align: right;"><a href="/2-modulo-cine" style="color:black;">Módulo cine</a>&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<br/></h3><p style="text-align: right;"> Este magnífico módulo permite tener informatizado y personalizado en muy poco una empresa de cine. El módulo permite tener una páginas web con la cartelera, sesiones disponibles, compra de entradas online y aplicar ofertas.<br/></p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Experto 5.199€</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Avanzado 3.599</a><a href="/2-modulo-cine" style="margin: 10px;" class="mt8 pull-right btn btn-warning" data-original-title="" title="">Básico 1.499€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/2-modulo-cine"><img class="img img-responsive pull-left mb16" src="/modulo_genodoo_tienda/static/src/img/cine.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
 		          </div>
 		        </section>
 		        <section class="s_image_text mb0 mt0" style="">
@@ -48,7 +48,7 @@
 		            <div class="row">
 		              <div class="mb0 col-md-3 col-md-offset-2 mt0">
 		                <a href="/3-modulo-hotel">
-		                  <img src="/web/image/549/hotel.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                  <img src="/modulo_genodoo_tienda/static/src/img/hotel.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
 		                </a>
 		              </div>
 		              <div class="col-md-6 mb48 mt8">
@@ -69,7 +69,7 @@
 		          <div class="container">
 		            <div class="row"><div class="col-md-6 col-md-offset-1 mb0 mt0"><h3 style="text-align: right;"><a href="/4-modulo-restaurante" style="color:black;">Módulo restaurante</a> &amp;nbsp;&amp;nbsp; <br/>
 		                    </h3><p style="text-align: right;"> Este módulo permite la gestión de los proveedores y pedidos a los mismos, TPV y una página web de reservas ampliable para contener también cualquier otro tipo de información que se desee del restaurante. <br/>
-		                    </p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Experto 4.599€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Avanzado 3.199€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Básico 1.399€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/4-modulo-restaurante"><img class="img img-responsive pull-left mb16" src="/web/image/551/restaurante.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
+		                    </p><p style="text-align: right;">El precio y opciones incluidas depende de la tarifa que se escoja:</p><p style="text-align: right;"><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Experto 4.599€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Avanzado 3.199€</a><a href="/4-modulo-restaurante" style="margin: 10px; color:white;" class="mt8 pull-right btn btn-alpha" data-original-title="" title="">Básico 1.399€</a></p></div><div class="col-md-5 mb0 mt0"><a href="/4-modulo-restaurante"><img class="img img-responsive pull-left mb16" src="/modulo_genodoo_tienda/static/src/img/restaurante.png" alt="Odoo text and image block" data-original-title="" title=""/></a></div>&amp;nbsp; <br/></div>
 		          </div>
 		        </section>
 		        <section class="s_image_text mt0 mb0" style="">
@@ -77,7 +77,7 @@
 		            <div class="row">
 		              <div class="mb0 col-md-3 col-md-offset-2 mt0">
 		                <a href="5-modulo-personalizado">
-		                  <img src="/web/image/552/personalizado.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
+		                  <img src="/modulo_genodoo_tienda/static/src/img/personalizado.png" class="center-block padding-medium img-rounded" data-original-title="" title=""/>
 		                </a>
 		              </div>
 		              <div class="col-md-6 mb48 mt8">
