@@ -1,0 +1,183 @@
+<odoo>
+    <data>
+        <template id="Home" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+               <div id="wrap" class="oe_structure oe_empty">
+               <!-- A partir de aquí empieza tu código -->
+		  <div id="myCarousel1557511985469" class="carousel slide s_banner mb0" data-interval="10000" style="height: 400px;">
+			<ol class="carousel-indicators hidden">
+			  <li data-target="#myCarousel1557511985469" data-slide-to="0" class="active"/>
+			</ol>
+			<div class="carousel-inner">
+			  <div class="item bg-primary oe_img_bg oe_custom_bg active" style="background-position: 32.13% 52.62%; background-image: url(&quot;/web/image/343/Untitled.png&quot;);">
+			    <div class="container">
+			      <div class="row content">
+				<div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96">
+				  <h2>GenOdoo Cinema</h2>
+				  <h4>// Prescindible</h4>
+				  <p>
+				    <a href="/comprar_entrada" class="btn btn-primary" data-original-title="" title="">¡COMPRA TU ENTRADA!</a>
+				  </p>
+				</div>
+				<div class="carousel-img hidden-sm hidden-xs mt0 mb0 col-md-5 col-md-offset-2">
+				  <img class="img-responsive" src="/web/image/342/pngtree-movie-projector-icon-_-set-of-great-flat-icons-with-style-png-image_848559.jpg" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+				</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<div class="carousel-control left hidden" data-target="#myCarousel1557511985469" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557511985469">
+			  <i class="fa fa-chevron-left"/>
+			</div>
+			<div class="carousel-control right hidden" data-target="#myCarousel1557511985469" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1557511985469">
+			  <i class="fa fa-chevron-right"/>
+			</div>
+		      </div>
+		      <ul/>
+		      <section class="s_comparisons bg-primary oe_img_bg oe_custom_bg mt0" style="background-image: url(&quot;/web/image/358/1200x630wa.png&quot;);">
+			<div class="container">
+			  <h2 class="text-center">
+			    <font class="text-black" style="">NUESTRAS OFERTAS</font>
+			  </h2>
+			  <div class="row">
+			    <div class="col-md-4 col-xs-12">
+			      <div class="panel bg-gray-light">
+				<div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+				  <h3 style="margin: 0">Casual</h3>
+				  <p style="margin: 0">// Prescindible<br/></p>
+				</div>
+				<div class="panel-body text-center">
+				  <h3 style="margin: 0">
+				    <span style=""></span>
+				    <b style="font-size: 60px">5</b>
+				    <small>.49</small>
+				  </h3>
+				  <div>usuario / sesión</div>
+				</div>
+				<ul class="list-group">
+				  <li class="list-group-item">Entrada básica de una sesión&amp;nbsp;</li>
+				</ul>
+				<div class="panel-footer text-center">
+				  <p class="text-muted">
+				    <i>Vea el estreno del año o la entrega puntual de su saga favorita</i>
+				  </p>
+				  <a href="/comprar_entrada" class="btn btn-primary btn-lg" data-original-title="" title="">¡COMPRA TU ENTRADA!</a>
+				</div>
+			      </div>
+			    </div>
+			    <div class="col-md-4 col-xs-12">
+			      <div class="panel bg-beta">
+				<div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+				  <h3 style="margin: 0">Aficionado</h3>
+				  <p style="margin: 0">// Prescindible<br/></p>
+				</div>
+				<div class="panel-body text-center">
+				  <h3 style="margin: 0">&amp;nbsp;<b style="font-size: 60px">39</b><small>.90</small></h3>
+				  <div>usuario / año</div>
+				</div>
+				<ul class="list-group">
+				  <li class="list-group-item">1 entradas / mes (+4.49 / entrada)<br/></li>
+				  <li class="list-group-item">2D / 3D a elegir<br/></li>
+				  <li class="list-group-item">Palomitas o bebidas pequeñas/ sesión<br/></li>
+				</ul>
+				<div class="panel-footer text-center">
+				  <p class="text-muted">
+				    <i>Para todos aquellos que nos gusta ver una buena pelicula de vez en cuando</i>
+				  </p>
+				  <a href="/comprar_bono_min" class="btn btn-primary btn-lg" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
+				</div>
+			      </div>
+			    </div>
+			    <div class="col-md-4 col-xs-12">
+			      <div class="panel bg-gray-light">
+				<div class="panel-heading text-center" style="background-color: rgba(255, 255, 255, 0.1)">
+				  <h3 style="margin: 0">Cinéfilo</h3>
+				  <p style="margin: 0">// Prescindible</p>
+				</div>
+				<div class="panel-body text-center">
+				  <h3 style="margin: 0"> <span style="font-size: 60px;"><b>79</b></span><small>.90</small></h3>
+				  <div>usuario / año</div>
+				</div>
+				<ul class="list-group">
+				  <li class="list-group-item">2 entradas / mes (+3.49 / entrada)</li>
+				  <li class="list-group-item">2D / 3D a elegir</li>
+				  <li class="list-group-item">Palomitas y bebidas medianas / sesión</li>
+				</ul>
+				<div class="panel-footer text-center">
+				  <p class="text-muted">
+				    <i>
+				      <i>"Todo el mundo quiere ser libre, pero una cosa es hablar de ello y otra muy diferente es serlo".</i>
+				      <br/>
+				    </i>
+				  </p>
+				  <p class="text-muted">
+				    <i>Easy Rider (1969)</i>
+				  </p>
+				  <a href="/comprar_bono_max" class="btn btn-primary btn-lg" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
+				</div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		      </section>
+		      <section class="s_title bg-gamma oe_img_bg oe_custom_bg" style="background-image: url(&quot;/web/image/357/Untitled.png&quot;);">
+			<div class="container">
+			  <div class="row">
+			    <div class="col-md-12">
+			      <h1 class="text-center">
+				<font class="text-black" style="">CARTELERA</font>
+			      </h1>
+			      <h3 class="text-center text-muted">// Adoenn</h3>
+			    </div>
+			  </div>
+			</div>
+		      </section>
+		      <section class="s_three_columns bg-black" style="">
+			<div class="container">
+			  <div class="row">
+			    <div class="col-md-4 mt32 mb48">
+			      <img class="img img-responsive" src="/web/image/348/fondos-harry-potter-1.jpg" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
+			      <h4 class="mt16">Harry Potter: La Orden del Fénix</h4>
+			      <p> Descripción</p>
+			      <p>Horarios dentro de la img al pincharla</p>
+			    </div>
+			    <div class="mt32 mb48 col-md-4">
+			      <img class="img img-responsive" src="/web/image/347/darth_vader_armor_star_wars_film_hat_snow_93645_1024x768.jpg" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
+			      <h4 class="mt16">Star Wars ep. V: El Imperio Contraataca</h4>
+			      <p> Para añadir una cuarta columna, reduzca el tamaño de estas tres columnas, usando el icono derecho de cada bloque. Entonces, duplique una de las columnas para crear una nueva como copia. </p>
+			    </div>
+			    <div class="col-md-4 mt32 mb48">
+			      <img class="img img-responsive" src="https://stmed.net/sites/default/files/jackie-chan-wallpapers-26806-57364.jpg" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+			      <h4 class="mt16">El Maestro Borracho</h4>
+			      <p> Eliminar la imagen anterior o reemplazarla por otra que ilustre su mensaje. Haga clic en la imagen para cambiar su <em class="o_default_snippet_text"> esquina redondeada</em>. </p>
+			    </div>
+			  </div>
+			</div>
+		      </section>
+		      <section class="s_three_columns bg-black" style="">
+			<div class="container">
+			  <div class="row">
+			    <div class="col-md-4 mt32 mb48">
+			      <img class="img img-responsive" src="http://1.bp.blogspot.com/-iSonoYI6IkE/TfUdiK9MI4I/AAAAAAAAAPU/4u6t2z4vPjc/s1600/07.jpg" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title="" aria-describedby="tooltip211840"/>
+			      <h4 class="mt16">El Padrino</h4>
+			      <p class="o_default_snippet_text"> Adapte estas tres columnas para que se ajuste con sus necesidades de diseño. Para duplicar, borrar o mover columnas, seleccione la columna, y use los iconos superiores para realizar su acción. </p>
+			    </div>
+			    <div class="col-md-4 mt32 mb48">
+			      <img class="img img-responsive" src="http://s1.1zoom.me/b5050/41/114420-stranger_1024x768.jpg" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
+			      <h4 class="mt16">La Momia: La Tumba del Emperador Dragón</h4>
+			      <p class="o_default_snippet_text"> Para añadir una cuarta columna, reduzca el tamaño de estas tres columnas, usando el icono derecho de cada bloque. Entonces, duplique una de las columnas para crear una nueva como copia. </p>
+			    </div>
+			    <div class="col-md-4 mt32 mb48">
+			      <img class="img img-responsive" src="/web/image/356/dt.common.streams.StreamServer%20(1).jpg" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+			      <h4 class="mt16">Érase una Vez en Hollywood</h4>
+			      <p class="o_default_snippet_text"> Eliminar la imagen anterior o reemplazarla por otra que ilustre su mensaje. Haga clic en la imagen para cambiar su <em class="o_default_snippet_text"> esquina redondeada</em>. </p>
+			    </div>
+			  </div>
+			</div>
+		      </section>
+               <!-- Aquí termina tu código -->
+              </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
