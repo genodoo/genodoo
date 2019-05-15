@@ -21,11 +21,9 @@ class Reproducciones(models.Model):
     @api.model
     def create(self, values):
         data = {
-            'categ_id':
-            'image': self.pelicula_id.image
-            'display_name': self.pelicula_id.name + ' ' + str(self.datetime)
+            'image': self.pelicula_id.image,
+            'display_name': str(self.pelicula_id.name) + ' ' + str(self.datetime),
             'list_price': self.price
         }
         self.env["product.template"].create(data)
         return super(Reproducciones, self).create(values)
-    

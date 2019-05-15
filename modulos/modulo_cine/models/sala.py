@@ -20,5 +20,4 @@ class Sala(models.Model):
     @api.onchange('room_number')
     @api.depends('room_number')
     def generate_name(self):
-        self.name = 'Sala' + str(self.room_number) 
-    
+        self.name = 'Sala' + ' ' + str(self.room_number)
