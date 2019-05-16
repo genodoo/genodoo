@@ -1,67 +1,109 @@
 <odoo>
-	<data>
-		<template id="home">
-			<xpath expr="//div[@id='wrap']" position="replace">
-				<t t-call="website.layout">
-					<div id="wrap" class="oe_structure oe_empty" style="font-family: Garamond !important;">
-						<section class="s_big_picture bg-gray-lighter mb0">
-							<div class="container">
-								<h2 class="text-center" style="text-align: center;">Restaurante GFork<br/></h2>
-								<div class="row">
-									<div class="col-md-12">
-										<img class="img img-responsive" src="/modulo_restaurante/static/src/img/gfork.jpg" style="margin: 0 auto;" alt="Odoo CMS - una imagen grande" data-original-title="" title=""/>
-									</div>
-									<div class="col-md-2 col-md-offset-5 mt32 mb32">
-										<a href="/reservas" class="pull-right mt8 btn btn-danger btn-lg" data-original-title="" title="">Reservar</a>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="s_three_columns">
-							<div class="container">
-								<div class="row">
-									<div class="col-md-4 mt32 mb48">
-										<img class="img img-responsive" src="/modulo_restaurante/static/src/img/tradicional.jpeg" alt="Odoo - Sample 1 for three columns" data-original-title="" title=""/>
-										<h4 class="mt16" style="text-align: center;">Cocina tradicional a precios asequibles.<br/></h4>
-										<p style="text-align: justify;">Platos típicos con el toque personal de nuestro chef.<br/></p>
-									</div>
-									<div class="col-md-4 mb32 mt32">
-										<img class="img img-responsive" src="/modulo_restaurante/static/src/img/gala.jpeg" alt="Odoo - Sample 3 for three columns" data-original-title="" title=""/>
-										<h4 class="mt16" style="text-align: center;">Cenas de gala. </h4>
-										<p style="text-align: center;">Pregunte por nuestros presupuestos para </p>
-										<p style="text-align: center;">su cena de empresa, celebración, etc.<br/></p>
-									</div>
-									<div class="col-md-4 mt32 mb48">
-										<img class="img img-responsive" src="/modulo_restaurante/static/src/img/internacional.jpeg" alt="Odoo - Sample 2 for three columns" data-original-title="" title=""/>
-										<h4 class="mt16" style="text-align: center;">Platos internacionales por cocineros de todo el mundo.<br/></h4>
-										<p style="text-align: center;">Nuestro equipo cuenta con cocineros de 10 países distintos, todos entusiasmados por divulgar la gastronomía de su patria.<br/></p>
-									</div>
-								</div>
-							</div>
-						</section>
-						<section class="jumbotron s_button bg-white" style="">
-							<div class="container">
-								<div class="row"> </div>
-							</div>
-						</section>
-						<section class="parallax s_parallax_slider oe_custom_bg oe_img_bg" style="background-image: none;" data-scroll-background-ratio="1.6">
-							<span class="s_parallax_bg oe_custom_bg" style="background-image: url(&quot;http://localhost:8069/web/image/website.s_parallax_slider_default_image&quot;); top: -100.96px; bottom: -100.96px; transform: translateY(97px);"/>
-							<div>
-								<div>
-									<div class="oe_structure"/>
-								</div>
-							</div>
-						</section>
-					</div>
-				</t>
-			</xpath>
-		</template>
-
-		<record id="homeid" model="website.page">
-			<field name="name">Restaurante-GFork</field>
-			<field name="website_published">True</field>
-			<field name="url">/home</field>
-			<field name="view_id" ref="home"/>
-		</record>
-	</data>
+    <data>
+        <template id="Home" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+               <!-- A partir de aquí empieza tu código -->
+		 <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle" rel="stylesheet"/>
+		<div id="wrap" class="oe_structure oe_empty" style="font-family: News Cycle;">
+		    <section class="s_text_block_image_fw oe_img_bg oe_custom_bg" style="background-image: url(/modulo_restaurante/static/src/img/head.jpg); background-position: center">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6 mt64 mb64 bg-black-25">
+		                    <h2 style="font-size:62px">Restaurante GFork
+		                    </h2>
+		                    <h4>El mejor sabor cordobés
+		                    </h4>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <section class="s_text_image bg-black" style="background-image: url(/modulo_restaurante/static/src/img/brick.jpg)">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6 mt64 mb32" style="background-color:rgba(0,0,0,0.7)">
+		                    <h3 style="text-align: center;">
+		                        <font style="font-size: 36px;">Estética rural, platos premium</font>
+		                    </h3>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;">Nuestro restaurante es un baúl de sorpresas. Disponemos de los platos tradicionales para los locales, además de platos extranjeros muy conocidos internacionalmente.</font>
+		                    </p>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;">El Restaurante GFork abrio sus puertas el dia 10 de febrero del 2019,&amp;nbsp;estamos en Av. de Andalucía y dista a 16 km de Córdoba Centro.</font>
+		                    </p>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;">Disfruta tu estancia con la mejor música en directo, jazz, blues, folk...</font>
+		                    </p>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;">Relájate en nuestra terraza tomando los mejores cócteles de toda Córdoba.</font>
+		                    </p>
+		                    <div class="col-md-2 col-md-offset-5 mb32 mt32">
+		                        <a href="/reservas" class="btn btn-danger btn-lg mt8" style="background-color:#5a1922;border-color:white ;position:relative; left:-30%;border-radius:0;" data-original-title="" title="">Reservar</a>
+		                    </div>
+		                </div>
+		                <div class="col-md-6 mt32 mb32">
+		                    <div class="col-md-12">
+		                        <img class="img img-responsive" src="/modulo_restaurante/static/src/img/gfork.jpg" style="margin: 0 auto;" data-original-title="" title=""/>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <section class="s_image_text bg-gray-darker" style="background-image:url(/modulo_restaurante/static/src/img/restaurant2.jpg);background-position:bottom; background-size:2000px">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6 mt32 mb32">
+		                    <img class="img img-responsive" src="/modulo_restaurante/static/src/img/pizza.jpg" data-original-title="" title="" style="width: 100%"/>
+		                </div>
+		                <div class="col-md-6 mt64 mb32" style="background-color:rgba(0,0,0,0.7)">
+		                    <h3 style="text-align: center;">
+		                        <font style="font-size: 36px;">Cocina tradicional a precios asequibles&amp;nbsp;</font>
+		                    </h3>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;">Platos típicos con el toque personal de nuestro chef.&amp;nbsp;</font>
+		                    </p>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <section class="s_text_image" style="background-image:url(/modulo_restaurante/static/src/img/restaurant.jpg)">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-6 mt64 mb32" style="background-color:rgba(0,0,0,0.7)">
+		                    <h3 style="text-align: center;">
+		                        <font style="font-size: 36px;" class="text-white">Platos exquisitos alrededor del mundo</font>
+		                    </h3>
+		                    <p style="text-align: center;">
+		                        <font style="font-size: 18px;" class="text-white">Los mejores platos internacionales en tu propia ciudad.</font>
+		                    </p>
+		                    <p style="text-align: right;">&amp;nbsp;</p>
+		                </div>
+		                <div class="col-md-6 mt32 mb32">
+		                    <img class="img img-responsive" src="/modulo_restaurante/static/src/img/oriental.jpg" data-original-title="" title=""/>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+		    <section class="s_three_columns bg-black">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-4 mt32 mb0">
+		                    <img class="img img-responsive" src="/modulo_restaurante/static/src/img/vegetarian.jpg" data-original-title="" title=""/>
+		                    <h4 class="mt16" style="text-align: center;">Menú Vegetariano</h4>
+		                </div>
+		                <div class="col-md-4 mt32 mb0">
+		                    <img class="img img-responsive" src="/modulo_restaurante/static/src/img/hollywood.jpg" data-original-title="" title=""/>
+		                    <h4 class="mt16" style="text-align: center;">Menú Hollywood</h4>
+		                </div>
+		                <div class="col-md-4 mt32 mb0">
+		                    <img class="img img-responsive" src="/modulo_restaurante/static/src/img/spanish.jpg" style="height:270px" alt="Odoo - Sample 2 for three columns" data-original-title="" title=""/>
+		                    <h4 class="mt16" style="text-align: center;">Menu España</h4>
+		                </div>
+		            </div>
+		        </div>
+		    </section>
+               <!-- Aquí termina tu código -->
+              </div>
+            </xpath>
+        </template>
+    </data>
 </odoo>
