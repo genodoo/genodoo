@@ -2,114 +2,287 @@
     <data>
         <template id="Home" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
-               <div id="wrap" class="oe_structure oe_empty">
+               <div id="wrap" class="oe_structure oe_empty" style="font-family: Lato">
                <!-- A partir de aquí empieza tu código -->
-		 <section class="s_big_picture bg-gray-lighter">
-			<div class="container">
-			  <h2 class="text-center" style="text-align: center;">Hotel GenOdoo</h2>
-			  <div class="row">
-			    <div class="col-md-12">
-			      <img class="img img-responsive" src="https://sevilla.abc.es/media/andalucia/2018/11/23/s/infografia-cordoba-hoteles-kqJF--620x349@abc.jpg" style="margin: 0 auto;" alt="Odoo CMS - una imagen grande" data-original-title="" title=""/>
-			    </div>
-			    <div class="col-md-6 col-md-offset-3 mb16 mt16">
-			    <p class="text-center" style="font-family:Arial">LOS HUÉSPEDES QUE BUSCAN EXCLUSIVIDAD PUEDEN SUMERGIRSE EN EL AMBIENTE DISCRETO Y DISTINGUIDO DEL MEJOR BOUTIQUE HOTEL DE LUJO EN EL CENTRO DE CÓRDOBA, QUE CUENTA CON 12 ESPECTACULARES HABITACIONES Y SUITES DE ENSUEÑO.</p>
-			      <a href="/contratar_hotel" class="btn btn-warning btn-lg" style="border-radius:40px;width:100%;height:100%" title="">RESERVE SU HABITACIÓN</a>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="jumbotron s_button bg-white" style="">
-			<div class="container">
-			  <div class="row"> </div>
-			</div>
-		      </section>
-		      <section class="s_features">
-			<div class="container">
-			  <div class="row mt16 mb16">
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-balance-scale fa-5x" data-original-title="" title="" aria-describedby="tooltip367362" style=""/>
-			      <div>
-				<h3 class="mb0 mt8">Multitud de servicios<br/></h3>
-				<p class="text-muted">Adáptate a los servicios que más necesites para conseguir la estancia que deseas. Tenemos planes con servicios más económicos y otros más exigentes.<br/></p>
-			      </div>
-			    </div>
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-group fa-5x" data-original-title="" title="" style=""/>
-			      <div>
-				<h3 class="mb0 mt8">Servicio al cliente<br/></h3>
-				<p class="text-muted">Estamos para usted en cualquier momento y en cualquier lugar. Queremos que nuestro cliente esté satisfecho durante toda su estancia en nuestro hotel.<br/></p>
-			      </div>
-			    </div>
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-apple fa-5x" data-original-title="" title="" style=""/>
-			      <div>
-				<h3 class="mt8 mb0">Buffet Libre<br/></h3>
-				<p class="text-muted">Disponemos de buffet libre 24 horas con un servicio de gran calidad y platos de todo tipo.</p>
-				<p class="text-muted">(Incluímos menús para personas con trastornos alimenticios)<br/></p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="s_feature_grid">
-			<div class="container">
-			  <div class="row">
-			    <div class="col-md-5 col-md-offset-1">
-			      <div class="row">
-				<div class="mt16 mb16 col-md-offset-9 col-md-12">
-				  <h3 class="mb0">Algunos de nuestros servicios<br/></h3>
-				  <h5 class="text-muted mb16">&amp;nbsp;</h5>
-				</div>
-				<div class="col-md-12">
-				  <span style="min-width: 45px" class="fa fa-2x fa-wifi mb16 pull-left" data-original-title="" title=""/>
-				  <h4 class="mb0 mt0">Wi-Fi</h4>
-				  <p>Conexión Wi-Fi de alta velocidad en todas nuestras instalaciones.<br/></p>
-				  <br/>
-				</div>
-				<div class="col-md-12">
-				  <span style="min-width: 45px" class="pull-left mb16 fa fa-fort-awesome fa-2x"/>
-				  <h4 class="mb0 mt0">Parque Infantil&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<br/></h4>
-				  <p>El reino de tus pequeños se encuentra en nuestro hotel. Nuestro equipo de monitores y monitoras vigilarán a tus pequeños.<br/></p>
-				  <br/>
-				</div>
-				<div class="col-md-12">
-				  <span style="min-width: 45px" class="pull-left mb16 fa fa-tree fa-2x"/>
-				  <h4 class="mt0 mb0">Parque natural<br/></h4>
-				  <p>Relájate paseando por el parque natural con conexión directa al hotel.<br/></p>
-				  <br/>
-				</div>
-			      </div>
-			    </div>
-			    <div class="col-md-5">
-			      <div class="row">
-				<div class="col-md-12 mt128">
-				  <span style="min-width: 45px" class="pull-left mb16 fa fa-bus fa-2x"/>
-				  <h4 class="mb0 mt0">Transporte público directo<br/></h4>
-				  <p>Disponemos de una línea de transporte público directa al hotel.<br/></p>
-				</div>
-				<div class="col-md-12">
-				  <span style="min-width: 45px" class="pull-left mb16 fa fa-medkit fa-2x" data-original-title="" title=""/>
-				  <h4 class="mb0 mt0">Enfermería 24/7<br/></h4>
-				  <p>En caso de urgencia, tendrás a tu servicio una enfermería 24 horas, que además se incluye en el plan VIP.<br/></p>
-				</div>
-				<div class="col-md-12">
-				  <span style="min-width: 45px" class="pull-left mb16 fa fa-paint-brush fa-2x"/>
-				  <h4 class="mb0 mt0">Exposición de arte<br/></h4>
-				  <p>Todos los años, los estudiantes de las escuelas de arte del país exponen sus obras en la Sala Van Gogh. La entrada es gratuita.<br/></p>
-				</div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="parallax s_parallax_slider oe_custom_bg oe_img_bg" style="background-image: none;" data-scroll-background-ratio="1.6">
-			<span class="s_parallax_bg oe_custom_bg" style="background-image: url(&quot;http://localhost:8069/web/image/website.s_parallax_slider_default_image&quot;); top: -146.72px; bottom: -146.72px; transform: translateY(145px);"/>
-			<div>
-			  <div>
-			    <div class="oe_structure"/>
-			  </div>
-			</div>
-		      </section>
+            <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+             <section class="s_title bg-black mb0 mt0">
+                <div class="container">
+                    <div class="row">
+                        <h1 class="text-center" style="margin:0">Hotel GenOdoo</h1>
+                    </div>
+                </div>
+            </section>
+            <div id="myCarousel1557953064460" class="carousel slide s_banner mb0 mt0" data-interval="5000" style="height: 400px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel1557953064460" data-slide-to="0">
+                        <br/>
+                    </li>
+                    <li data-target="#myCarousel1557953064460" data-slide-to="1">
+                        <br/>
+                    </li>
+                    <li data-target="#myCarousel1557953064460" data-slide-to="2" class="active">
+                        <br/>
+                    </li>
+                    <li data-target="#myCarousel1557953064460" data-slide-to="3">
+                        <br/>
+                    </li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_hotel/static/src/img/hotel1.jpg); background-position: center;">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96" style="background-color: rgba(255, 255, 255, 0.8); border-radius: 10px">
+                                    <h2 style="margin:0">Habitaciones de lujo
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </h2>
+                                    <h4>Para conseguir el máximo confort del cliente
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_hotel/static/src/img/hotel2.jpg); background-position: center;">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96" style="background-color: rgba(255,255,255,0.8);border-radius:10px">
+                                    <h2 class="o_default_snippet_text" style="margin:0">Barra libre</h2>
+                                    <h4>Para los más atrevidos</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg-alpha oe_img_bg oe_custom_bg active" style="background-image: url(/modulo_hotel/static/src/img/hotel3.jpg); background-position: center center;">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96" style="background-color: rgba(255,255,255,0.8);border-radius:10px">
+                                    <h2 class="o_default_snippet_text" style="margin:0">Piscina climatizada</h2>
+                                    <h4>Para llegar al máximo estado Zen</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_hotel/static/src/img/hotel4.jpeg); background-position:center">
+                        <div class="container">
+                            <div class="row content">
+                                <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96" style="background-color: rgba(255,255,255,0.8);border-radius:10px">
+                                    <h2 class="o_default_snippet_text" style="margin:0">Visita la Sala Van Gogh</h2>
+                                    <h4>Para adentrarte en el mundo artístico</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-control left" data-target="#myCarousel1557953064460" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557953064460">
+                    <i class="fa fa-chevron-left"/>
+                </div>
+                <div class="carousel-control right" data-target="#myCarousel1557953064460" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1557953064460">
+                    <i class="fa fa-chevron-right"/>
+                </div>
+            </div>
+            <section class="s_text_image" style="background-image:url(/modulo_hotel/static/src/img/hotel6.jpeg); background-size:2000px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mt64 mb32">
+                            <h3 style="text-align: center;" class="o_default_snippet_text">
+                                <font style="" class="text-white">Un hotel de ensueño</font>
+                            </h3>
+                            <p style="text-align: center">
+                                <font class="text-white" style="">&amp;nbsp;Un animado hotel urbano donde los huéspedes pueden presenciar una fusión única entre el ocio, la diversión, la comodidad y un servicio personalizado imbuido de la calidad y la esencia de Córdoba.</font>
+                            </p>
+                            <p style="text-align: center" class="o_default_snippet_text">
+                                <font class="text-white" style="">&amp;nbsp;Nuestro restaurante está abierto todos los días para el desayuno, el almuerzo y la cena a la carta y también ofrecemos un menú gourmet original, diseñado por el chef Carlos Arguiñano, de lunes a viernes, de lunes a viernes. Descubra el salón Red Circle abierto los viernes y sábados por la noche para disfrutar de música, cócteles y tapas...&amp;nbsp;</font>
+                            </p>
+                        </div>
+                        <div class="col-md-6 mt32 mb32">
+                            <img class="img img-responsive pull-left mb16" src="/modulo_hotel/static/src/img/hotel5.jpg" alt="Texto de Odoo y bloque de imagen" data-original-title="" title="" aria-describedby="tooltip288575"/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="jumbotron s_button bg-black" style="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <p class="mb0" style="text-align:center">
+                                <b>Los huéspedes que buscan exclusividad pueden sumergirse en el ambiente discreto y distinguido del mejor hotel de lujo en el centro de Córdoba. 
+                                    
+                                    </b>
+                                <font style="color: rgb(255, 255, 255);"/>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="/reservas" class="pull-right mt8 btn btn-warning btn-lg" style="background-color: white; color: black; border-style: solid; border-radius:40px; border-width: 0px:; border-color:black" data-original-title="" title="">RESERVE SU HABITACIÓN</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_features bg-white">
+                <div class="container">
+                    <div class="row mt16 mb16">
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-balance-scale fa-5x" data-original-title="" title="" aria-describedby="tooltip367362" style=""/>
+                            <div>
+                                <h3 class="mb0 mt8">Multitud de opciones 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </h3>
+                                <p class="text">Adáptate a los servicios que más necesites para conseguir la estancia que deseas. Tenemos planes con servicios más económicos y otros más exigentes. 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-group fa-5x" data-original-title="" title="" style=""/>
+                            <div>
+                                <h3 class="mb0 mt8">Servicio al cliente 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </h3>
+                                <p class="text">Estamos para usted en cualquier momento y en cualquier lugar. Queremos que nuestro cliente esté satisfecho durante toda su estancia en nuestro hotel. 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <span class="fa fa-cutlery fa-5x" data-original-title="" title="" style=""/>
+                            <div>
+                                <h3 class="mt8 mb0">Buffet Libre 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </h3>
+                                <p class="text">Disponemos de buffet libre 24 horas con un servicio de gran calidad y platos de todo tipo.
+                                    
+                                    
+                                    
+                                    <br/>(Incluímos menús para personas con trastornos alimenticios) 
+                                    
+                                    
+                                    
+                                    <br/>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_feature_grid bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-md-12 mb0 mt0">
+                                    <h3 class="mb0" style="text-align: center;">Algunos de nuestros servicios 
+                                        <br/>
+                                    </h3>
+                                    <h5 class="text-muted mb16">&amp;nbsp;</h5>
+                                </div>
+                                <div class="col-md-12">
+                                    <span style="min-width: 45px" class="fa fa-2x fa-wifi mb16 pull-left" data-original-title="" title=""/>
+                                    <h4 class="mb0 mt0">Wi-Fi</h4>
+                                    <p>Conexión Wi-Fi de alta velocidad en todas nuestras instalaciones. 
+                                        <br/>
+                                    </p>
+                                    <br/>
+                                </div>
+                                <div class="col-md-12">
+                                    <span style="min-width: 45px" class="pull-left mb16 fa fa-fort-awesome fa-2x"/>
+                                    <h4 class="mb0 mt0">Parque Infantil&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 
+                                        <br/>
+                                    </h4>
+                                    <p>El reino de tus pequeños se encuentra en nuestro hotel. Nuestro equipo de monitores y monitoras vigilarán a tus pequeños. 
+                                        <br/>
+                                    </p>
+                                    <br/>
+                                </div>
+                                <div class="col-md-12">
+                                    <span style="min-width: 45px" class="pull-left mb16 fa fa-tree fa-2x"/>
+                                    <h4 class="mt0 mb0">Parque natural 
+                                        <br/>
+                                    </h4>
+                                    <p>Relájate paseando por el parque natural con conexión directa al hotel. 
+                                        <br/>
+                                    </p>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-md-12 mt0 mb0">
+                                    <h3 class="mb0" style="text-align: center;">Para ti las 24 horas del día
+                                        <br/>
+                                    </h3>
+                                    <h5 class="text-muted mb16">&amp;nbsp;</h5>
+                                </div>
+                                <div class="col-md-12 mt0 mb16">
+                                    <span style="min-width: 45px" class="pull-left mb16 fa fa-bus fa-2x"/>
+                                    <h4 class="mb0 mt0">Transporte público directo 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </h4>
+                                    <p>Disponemos de una línea de transporte público directa al hotel. 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="col-md-12 mb16">
+                                    <span style="min-width: 45px" class="pull-left mb16 fa fa-medkit fa-2x" data-original-title="" title=""/>
+                                    <h4 class="mb0 mt0">Enfermería 24/7 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </h4>
+                                    <p>En caso de urgencia, tendrás a tu servicio una enfermería 24 horas, que además se incluye en el plan VIP. 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </p>
+                                </div>
+                                <div class="col-md-12">
+                                    <span style="min-width: 45px" class="pull-left mb16 fa fa-paint-brush fa-2x"/>
+                                    <h4 class="mb0 mt0">Exposición de arte 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </h4>
+                                    <p>Todos los años, los estudiantes de las escuelas de arte del país exponen sus obras en la Sala Van Gogh. La entrada es gratuita. 
+                                        
+                                        
+                                        
+                                        <br/>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
                <!-- Aquí termina tu código -->
               </div>
             </xpath>
