@@ -1,0 +1,32 @@
+<odoo>
+    <data>
+        <template id="thanks">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="website.layout">
+                        <!-- A partir de aquí empieza tu código -->
+                         <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
+			      <div id="wrap" class="oe_structure oe_empty" style="font-family: News Cycle; background-image:url(/modulo_restaurante/static/src/img/brick.jpg)">
+				<section class="s_image_text">
+				  <div class="container">
+				    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); width:100%">
+				      <center>
+					<img src="/modulo_restaurante/static/src/img/cutlery.png" style="filter: invert(100%)" width="226" height="226"/>
+				      </center>
+				      <h2 class="o_default_snippet_text" style="font-size: 30px; text-align:center; vertical-align:middle">
+					<font style="font-size: 48px;">GRACIAS POR SU RESERVA</font>
+				      </h2>
+				      <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
+					<font style="font-size: 18px;">
+						                    Le responderemos con la confirmación lo antes posible.
+						               &amp;nbsp;</font>
+				      </p>
+				    </div>
+				  </div>
+				</section>
+                        <!-- Aquí termina tu código -->
+                    </div>
+                </t>
+            </xpath>
+        </template>
+    </data>
+</odoo>
