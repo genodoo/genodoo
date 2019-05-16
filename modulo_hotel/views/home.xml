@@ -14,13 +14,13 @@
             </section>
             <div id="myCarousel1557953064460" class="carousel slide s_banner mb0 mt0" data-interval="5000" style="height: 400px;">
                 <ol class="carousel-indicators">
-                    <li data-target="#myCarousel1557953064460" data-slide-to="0">
+                    <li data-target="#myCarousel1557953064460" data-slide-to="0" class="active">
                         <br/>
                     </li>
                     <li data-target="#myCarousel1557953064460" data-slide-to="1">
                         <br/>
                     </li>
-                    <li data-target="#myCarousel1557953064460" data-slide-to="2" class="active">
+                    <li data-target="#myCarousel1557953064460" data-slide-to="2">
                         <br/>
                     </li>
                     <li data-target="#myCarousel1557953064460" data-slide-to="3">
