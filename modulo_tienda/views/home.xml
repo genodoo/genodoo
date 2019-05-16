@@ -3,7 +3,7 @@
         <template id="home" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
                <div id="wrap" class="oe_structure oe_empty">
-               <!-- A partir de aquí empieza tu código -->
+               <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Merriweather|Raleway|Playfair+Display|Unna|Fredericka+the+Great|Cabin+Sketch|Copse|Gruppo|Nixie+One|Coustard|Major+Mono+Display" rel="stylesheet"/>
 		  <div id="myCarousel1557590617997" class="carousel slide s_banner mb0" data-interval="3000" style="height: 400px;">
 			<ol class="carousel-indicators">
 			  <li data-target="#myCarousel1557590617997" data-slide-to="0" class="active">
@@ -16,7 +16,7 @@
 			    <br/>
 			  </li>
 			</ol>
-			<div class="carousel-inner">
+			<div class="carousel-inner" style="font-family: Raleway">
 			  <div class="item bg-info active" style="">
 			    <div class="container">
 			      <div class="row content">
@@ -78,7 +78,7 @@
 			</div>
 		      </div>
 		      <section class="s_features mt128">
-			<div class="container">
+			<div class="container" style="font-family: Raleway">
 			  <div class="row mt16 mb16">
 			    <div class="col-md-4 text-center">
 			      <span class="fa fa-crosshairs fa-5x" data-original-title="" title="" style=""/>
@@ -105,21 +105,21 @@
 			</div>
 		      </section>
 		      <section class="s_image_text mt128 mb128 bg-beta oe_img_bg oe_custom_bg" style="background-image: url(http://getwallpapers.com/wallpaper/full/9/1/9/510868.jpg);">
-			<div class="container">
+			<div class="container" style="font-family: Cabin Sketch">
 			  <div class="row">
 			    <div class="col-md-6 mb8 mt64">
 			      <h3>
-				<font style="font-size: 48px;" class="text-white">Sobre nosotros</font>
+				<font style="font-size: 48px; font-family: Cabin Sketch" class="text-white">Sobre nosotros</font>
 			      </h3>
 			      <p>
-				<font style="font-size: 24px;" class="text-white">Somos tres socios apasionados del tenis que buscan ofrecer a sus clientes la mejor calidad de productos con el precio más competitivo. </font>
+				<font style="font-size: 24px; font-family: Cabin Sketch" class="text-white">Somos tres socios apasionados del tenis que buscan ofrecer a sus clientes la mejor calidad de productos con el precio más competitivo. </font>
 			      </p>
 			    </div>
 			  </div>
 			</div>
 		      </section>
-		      <section class="s_title mt0 bg-white" style="">
-			<div class="container">
+		      <section class="s_title mt0 bg-white" style="font-family: Major Mono Display">
+			<div class="container" style="Coustard">
 			  <div class="row">
 			    <div class="col-md-12 mt0 mb0">
 			      <h1 class="text-center">
@@ -132,7 +132,7 @@
 		      </section>
 		      <section class="s_three_columns mt0">
 			<div class="container">
-			  <div class="row">
+			  <div class="row" style="font-family: Raleway">
 			    <div class="col-md-4 mt32 mb48">
 			      <img class="img img-responsive" src="https://cdn.shoplightspeed.com/shops/607570/files/11903044/800x600x2/babolat-pure-drive-vs-2019-tennis-racquet.jpg" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
 			      <h4 class="mt16">Babolat Pure Drive (2019)<br/></h4>
@@ -157,3 +157,4 @@
         </template>
     </data>
 </odoo>
+<!--Este es el bueno -->
