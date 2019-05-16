@@ -27,4 +27,5 @@
 	'templates/template_tienda.xml',
 	#'security/ir.model.access.csv',
     ],
+    'application'=True,
 }
