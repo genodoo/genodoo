@@ -1,0 +1,15 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+	<record id="view_formulario" model="ir.ui.view">
+		<field name="Nombre">Formulario de pedido</field>
+		<field name="arch" type="xml">
+			<form string= "Realizar pedido">			
+				<group>
+					<field name="Nombre" />
+					<field name="Correo" />
+					<field name="Teléfono" />
+				</group>
+			</form>
+		</field>
+	</record>
+</odoo>

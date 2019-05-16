@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+    <template id="Modulo_GenOdoo_hotel">
+      <xpath expr="//div[@id='wrap']" position="replace">
+        <t t-call="website.layout">
+          <div id="wrap" class="oe_structure oe_empty">
+            <section class="s_image_text mb0 mt0" style="">
+              <div class="container">
+                <div class="row">
+                  <div class="mt48 col-md-3 col-md-offset-2 mb32">
+                    <section class="o_gallery s_image_gallery o_slideshow o_spc-medium mt0" data-columns="3" style="">
+                      <div class="container">
+                        <div class="carousel slide" data-ride="carousel" style="margin: 0 12px;" id="slideshow_1557773365274" data-interval="false">
+                          <div class="carousel-inner container" style="padding: 0;">
+                            <div class="item active">
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/hotel.png" data-index="0" data-original-title="" title=""/>
+                            </div>
+                            <div class="item">
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/cine.png" data-index="1"/>
+                            </div>
+                          </div>
+                          <a class="carousel-control left" data-slide="prev" href="#slideshow_1557773365274">
+                            <span class="fa fa-chevron-left"/>
+                          </a>
+                          <a class="carousel-control right" data-slide="next" href="#slideshow_1557773365274">
+                            <span class="fa fa-chevron-right" data-original-title="" title=""/>
+                          </a>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-6 mb0 mt64">
+                    <h3> &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;<a style="color:black;" data-original-title="" title="">Módulo hotel</a>
+                  </h3>
+                  <h3>
+                    <span style="color: black; font-size: 10px;"/>
+                  </h3>
+                  <p>Este gran módulo incluye la gestión de las reservas de habitaciones con los días y precios estimados. En caso de tener servicio de restauración se puede implementar junto al Módulo restaurante.<br/></p>
+                  <p>El precio y opciones incluidas depende de la tarifa que se escoja:</p>
+                  <p>
+                    <a href="/shoptest" class="mt8 pull-right" data-original-title="" title="">&amp;nbsp; </a>
+                    <br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="s_comparisons">
+            <div class="container">
+              <h2 class="text-center">Tarifas</h2>
+              <div class="row">
+                <div class="col-md-4 col-xs-12">
+                  <div class="panel" style="background-color: rgba(242, 232, 100, 1); color: black;">
+                    <div class="panel-heading text-center" style="background-color: gold">
+                      <h3 style="margin: 0">Básico</h3>
+                      <p style="margin: 0" class="o_default_snippet_text">                                Para pequeñas empresas                            </p>
+                    </div>
+                    <div class="panel-body text-center">
+                      <h3 style="margin: 0">&amp;nbsp;                    <b style="font-size: 60px" class="o_default_snippet_text">3.699</b>
+                      <small>.00 <b>
+                        <font style="font-size: 24px;">€</font>
+                      </b>
+                    </small>
+                  </h3>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    <div style="text-align: center;">Páginas web básicas y CRM<br/>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div style="text-align: center;">Gestión del equipo no incluida<br/>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div style="text-align: center;">Lo estándar, nada personalizado<br/>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div style="text-align: center;">&amp;nbsp;Soporte 2 días en semana<br/>
+            </div>
+          </li>
+        </ul>
+        <div class="panel-footer text-center">
+          <p class="text-muted">
+            <i>Instalación rápida, satisfecho o reembolso</i>
+          </p>
+          <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-xs-12">
+      <div class="panel " style="background-color: rgba(242, 232, 100, 1); color: black;">
+        <div class="panel-heading text-center" style="background-color: gold">
+          <h3 style="margin: 0">Avanzado</h3>
+          <p style="margin: 0" class="o_default_snippet_text">Para negocios grandes</p>
+        </div>
+        <div class="panel-body text-center">
+          <h3 style="margin: 0">&amp;nbsp;                    <span/>
+          <b style="font-size: 60px" class="o_default_snippet_text">6.299</b>
+          <small>
+            <font style="font-size: 24px;">.00&amp;nbsp;</font>
+            <b>
+              <font style="font-size: 24px;">€</font>
+            </b>
+          </small>
+        </h3>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <div style="text-align: center;">Páginas web básicas, CRM y TPV<br/>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <div style="text-align: center;">Gestión del equipo incluida<br/>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div style="text-align: center;">Personalización soportada en algunos campos<br/>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div style="text-align: center;">Soporte en días laborables<br/>
+  </div>
+</li>
+</ul>
+<div class="panel-footer text-center">
+  <p class="text-muted">
+    <i>Instalación rápida, satisfecho o reembolso</i>
+  </p>
+  <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-xs-12">
+  <div class="panel " style="background-color: rgba(242, 232, 100, 1); color: black;">
+    <div class="panel-heading text-center" style="background-color: gold">
+      <h3 style="margin: 0">Experto</h3>
+      <p style="margin: 0">Para los que escriben el futuro<br/>
+    </p>
+  </div>
+  <div class="panel-body text-center">
+    <h3 style="margin: 0">&amp;nbsp; <b style="font-size: 60px">9.799</b>
+    <small>
+      <font style="font-size: 24px;">.00&amp;nbsp;</font>
+      <b>
+        <font style="font-size: 24px;">€</font>
+      </b>
+    </small>
+  </h3>
+</div>
+<ol class="list-group">
+  <li class="list-group-item">
+    <div style="text-align: center;">Todas las páginas web necesarias, CRM y TPV<br/>
+  </div>
+</li>
+<li class="list-group-item">
+  <div style="text-align: center;">Gestión del equipo con roles personalizados<br/>
+</div>
+</li>
+<li class="list-group-item">
+  <div style="text-align: center;">Personalizable al 100%<br/>
+</div>
+</li>
+<li class="list-group-item">
+  <div style="text-align: center;">Soporte las 24 horas los 7 días de la semana<br/>
+</div>
+</li>
+</ol>
+<div class="panel-footer text-center">
+  <p class="text-muted">
+    <i>Instalación rápida, satisfecho o reembolso</i>
+  </p>
+  <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</t>
+</xpath>
+</template>
+</data>
+</odoo>

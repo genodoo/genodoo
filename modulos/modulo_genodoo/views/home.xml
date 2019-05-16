@@ -1,0 +1,276 @@
+<odoo>
+    <data>
+        <template id="Home" inherit_id="website.homepage">
+            <xpath expr="//div[@id='wrap']" position="replace">
+               <div id="wrap" class="oe_structure oe_empty">
+               <!-- A partir de aquí empieza tu código -->
+		<div id="myCarousel1557656627359" class="carousel slide s_banner" data-interval="10000" style="height: 392px; overflow: hidden;">
+		<ol class="carousel-indicators">
+		  <li data-target="#myCarousel1557656627359" data-slide-to="0" class="active">
+		    <div style="text-align: left;">
+		      <br/>
+		    </div>
+		  </li>
+		  <li data-target="#myCarousel1557656627359" data-slide-to="1">
+		    <br/>
+		  </li>
+		</ol>
+		<div class="carousel-inner">
+		  <div class="item bg-gray-lighter active">
+		    <div class="container">
+		      <div class="row content">
+		        <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96" style="">
+		          <h2>Atención al instante<br/></h2>
+		          <h4>Estamos disponibles para atenderte<br/>en cualquier momento.<br/></h4>
+		          <p>
+		            <a href="/contactus" class="btn btn-warning btn-large o_default_snippet_text">Contáctenos</a>
+		          </p>
+		        </div>
+		        <div class="carousel-img hidden-sm hidden-xs col-md-offset-1 col-md-5 mt48" style="">
+		          <img class="img-responsive" src="/website/static/src/img/backgrounds/city.jpg" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="item bg-gray-lighter">
+		    <div class="container">
+		      <div class="row content">
+		        <div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96">
+		          <h2>Módulos únicos<br/></h2>
+		          <h4>Desarrollamos cualquier módulo que<br/>puedas imaginar para tu negocio.<br/></h4>
+		          <p>
+		            <a href="/contactus" class="btn btn-warning btn-large o_default_snippet_text">Contáctenos</a>
+		          </p>
+		        </div>
+		        <div class="carousel-img hidden-sm hidden-xs col-md-offset-1 col-md-5 mt32">
+		          <img class="img-responsive" src="/website/static/src/img/backgrounds/sails.jpg" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="carousel-control left" data-target="#myCarousel1557656627359" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557656627359">
+		  <i class="fa fa-chevron-left"/>
+		</div>
+		<div class="carousel-control right" data-target="#myCarousel1557656627359" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1557656627359">
+		  <i class="fa fa-chevron-right"/>
+		</div>
+	      </div>
+	      <section class="s_three_columns mt0">
+		<div class="container">
+		  <div class="row">
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/tienda.png" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">TIENDA</h4>
+		      <p>Con el módulo tienda, tus clientes tendrán acceso a una web elegante y atractiva de venta de cualquier producto. Además, el sistema de Odoo te permitirá tener un control sobre stock, ventas y comportamientos del cliente.<br/></p>
+		    </div>
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/cine.png" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">CINE</h4>
+		      <p>Con el módulo cine, tu sitio web lucirá como una cartelera de cine, con acceso a reserva de entradas, bonos de descuento y promociones, compra de tickets. El administrador tendrá acceso a una vista de cada sala y las butacas reservadas en cada una.<br/></p>
+		    </div>
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/hotel.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">HOTEL<br/></h4>
+		      <p>Reserva de habitaciones, servicios ofrecidos por el hotel, servicio al cliente inmediato...Todo esto y más es lo que ofrecemos mediante el módulo Hotel, con el cual el cliente no tendrá problemas a la hora de reservar un alojamiento.<br/></p>
+		    </div>
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/restaurante.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">RESTAURANTE</h4>
+		      <p>El módulo restaurante te ofrece todo lo que un restaurante podría necesitar. Para el cliente, disponemos de una página web para reservar mesas, consultar menús y horarios, etc. El administrador dispondrá del control absoluto del restaurante en un sencillo sistema de manejo.<br/></p>
+		    </div>
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/academia_comingsoon.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">ACADEMIA</h4>
+		      <p>Maneja todos los servicios ofrecidos por tu academia en procedimientos fáciles y al alcance de todos. Pídenos que adaptemos el módulo a tu colegio, instituto o universidad. Todo es más fácil cuando tienes disponible cualquier información en el sistema.<br/></p>
+		    </div>
+		    <div class="mt32 mb48 col-md-2">
+		      <img class="img img-responsive" src="/modulo_genodoo/static/src/img/personalizado.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		      <h4 class="mt16" style="text-align: center;">PERSONALIZADO</h4>
+		      <p>Imagina tu negocio siendo manejado con un sencillo, rápido y eficaz sistema. Imagina disponer de un atractivo Sitio Web para tus clientes, con todo lo necesario para ti.<br/>Te ofrecemos un módulo completamente personalizado para ti, para hacer realidad lo que parece un sueño.<br/></p>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="jumbotron s_button bg-gray-lighter" style="">
+		<div class="container">
+		  <div class="row">
+		    <div class="col-md-9">
+		      <p class="mb0">
+		        <img src="/modulo_genodoo/static/src/img/contact.png" style="width: 25%;" class="pull-left" data-original-title="" title=""/>
+		        <strong>
+		          <br/>
+		        </strong>
+		      </p>
+		      <p class="mb0">
+		        <strong>
+		          <br/>
+		        </strong>
+		      </p>
+		      <p class="mb0">
+		        <strong>
+		          <br/>
+		        </strong>
+		      </p>
+		      <p class="mb0">
+		        <strong>50,000+ empresas usan GenOdoo en sus negocios.</strong>
+		      </p>
+		      <p class="mb0"> Únase a nosotros para hacer de la comunidad un lugar mejor.</p>
+		      <p class="mb0">
+		        <br/>
+		      </p>
+		    </div>
+		    <div class="col-md-3 mb64 mt92">
+		      <a href="/contactus" class="btn btn-primary btn-lg pull-right mt8" data-original-title="" title="" style="align-content">
+		        <span data-original-title="" title="">Contáctenos ahora</span>
+		        <i class="fa fa-chevron-right"/>
+		      </a>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+	      <section class="s_company_team">
+		<div class="container">
+		  <h1 class="text-center mb32">Nuestro equipo<br/></h1>
+		  <div class="row">
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/pepe.png" style="width:128px;height:128px" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>José Márquez, CTO<br/></h4>
+		          <p class="text-muted"> José, fundador y líder visionario del proyecto, es la fuerza motriz que impulsa la empresa. Le encanta mantenerse ocupado participando en el desarrollo de estrategias de software, marketing y experiencia del consumidor. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/pablo.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Pablo Rodríguez, Director de desarrollo<br/></h4>
+		          <p class="text-muted"> A Pablo le encanta afrontar desafíos. La dilatada experiencia que Pablo atesora como director de desarrollo en la industria del software ha posibilitado que la empresa goce de la posición que ostenta actualmente. Pablo es, simple y llanamente, uno de nuestros mejores avales. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/francis.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Francis Molina, UX<br/></h4>
+		          <p class="text-muted"> Francis, desde sus inicios, siempre ha sido muy perfeccionista en el diseño amigable para el cliente, buscando la mejor experiencia que el usuario puede tener. Dirige el equipo de diseño de toda la empresa y es la imagen del mismo.</p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/alex.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Álex Luque, Front-end<br/></h4>
+		          <p class="text-muted">Álex es de esas personas loables que pueden decir que adoran lo que hacen. Los pequeños detalles en sus diseños son lo que le hacen especial en el equipo.Dirige un equipo de más de 10 diseñadores y supervisa una comunidad compuesta por miles de ellos. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/carmen.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Carmen Vílchez, Front-end<br/></h4>
+		          <p class="text-muted"> Carmen, con su experiencia internacional, nos ayuda a entender con facilidad los estilos y los mejora. Su determinación por lograr el éxito colectivo es firme, y ofrece su agudeza profesional para llevar la empresa a nuevos niveles y horizontes. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/fernando.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Fernando Ramírez, Back-end<br/></h4>
+		          <p class="text-muted"> Fernando, con su especialización en el funcionamiento interno del sistema, es clave para tener el flujo de trabajo de este en orden. Su objetivo es tener todo bajo control y al alcance de todo el equipo, por lo que es una parte fundamental de este. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/angel.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Ángel Martín, Back-end<br/></h4>
+		          <p class="text-muted"> Ángel es el principal impulsor del Software Libre en el equipo. Además de encargarse de gran parte del back-end del sistema, realiza formación básica en algunas tecnologías libres a los nuevos en el equipo. </p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/hector.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Hector Romero, Back-end<br/></h4>
+		          <p class="text-muted">Héctor es la máquina de la seguridad en el sistema. Su experiencia en el campo impresiona al resto del equipo y su lugar en GenOdoo es más que merecido. Su labor&amp;nbsp; principal es ofrecer un sistema consolidado y fiable a la empresa.<br/></p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/juanpedro.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Juan Pedro Muñoz, Back-end<br/></h4>
+		          <p class="text-muted">Juan Pedro tiene una labor esencial en el equipo, y es la de mantener la integración en la base de datos y asegurar que no se ve afectada por motivos externos. Además, diseña el modelo de procesos de los módulos.<br/></p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/alvaro.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Álvaro Prieto, Back-end<br/></h4>
+		          <p class="text-muted">Álvaro lleva a cabo una de las tareas más importantes junto a otros miembros del equipo. Esto es, el desarrollo de módulos y controladores del sistema. Además, se encarga de gestionar la base de datos de la empresa.<br/></p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/gonzalo.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Gonzalo Reyes, Diseño<br/></h4>
+		          <p class="text-muted">Gonzalo ha tocado el mundo del diseño desde sus inicios por lo que su experiencia es más que destacable. Se encarga junto a otros miembros del equipo de dirigir un grupo de diseñadores<br/></p>
+		        </div>
+		      </div>
+		    </div>
+		    <div class="col-md-6 mb32">
+		      <div class="row s_no_resize_cols">
+		        <div class="col-md-4">
+		          <img src="/modulo_genodoo/static/src/img/tony.png" class="img-responsive img-circle center-block shadow"/>
+		        </div>
+		        <div class="col-md-8">
+		          <h4>Antonio Muñoz, Diseño<br/></h4>
+		          <p class="text-muted">Antonio es un diseñador único en su campo. Ofrece diseños atractivos e intuitivos para el usuario y para el propio equipo de UX. Además, se encarga de la integración del Chatbot de GenOdoo.<br/></p>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	      </section>
+               <!-- Aquí termina tu código -->
+              </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
