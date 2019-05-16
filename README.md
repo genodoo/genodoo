@@ -1,2 +1,0 @@
-# genodoo
-Genodoo repo
