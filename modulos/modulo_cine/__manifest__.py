@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "modulo_cine",
+    'name': "Genodoo Cinema",
 
     'summary': """Gestion de empresas de cine""",
 
