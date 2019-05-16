@@ -10,7 +10,7 @@ class Reproducciones(models.Model):
     datetime = fields.Datetime(string='Fecha', required=True)
     pelicula_id = fields.Many2one(comodel_name='cine.pelicula', string='Película', required=True)
     sala_id = fields.Many2one(comodel_name='cine.sala', string='Sala', required=True)
-    price = fields.Float(string='Precio', required=True)
+    price = fields.Float(string='Precio', required=True, default=5.49)
 
     _sql_constraints = [
         ('PK4',
@@ -22,13 +22,12 @@ class Reproducciones(models.Model):
     def create(self, values):
         pelicula = self.env['cine.pelicula'].search([("id", "=", values['pelicula_id'])])
         data = {
+            'name': str(pelicula.name) + ' ' + str(values['datetime']),
             'image': pelicula.image,
-#           'display_name': str(pelicula.name) + ' ' + str(values['datetime']),
-            'type': "consu",
-            'categ_id': 1,
             'sale_ok': True,
             'purchase_ok': False,
-            'name': str(pelicula.name) + ' ' + str(values['datetime']),
+            'type': "consu",
+            'categ_id': 1,
             'list_price': values['price'],
             'standard_price': values['price']
         }
