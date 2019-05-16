@@ -1,38 +1,25 @@
 # -*- coding: utf-8 -*-
 from odoo import http, models, fields
-from datetime import datetime
+from datetime import datetime, timedelta
 
 
 class RestaurantController(http.Controller):
-    
-    # @http.route('/patata', type='http', auth='public', methods=['GET', 'POST'], website=True)
-    # def  ReservationPage(self, **kw):
-    #     return http.request.render('modulo_restaurante.thanks')
-
-
-    # @http.route('/reservas', type='http', auth='public', methods=['GET'], website=True)
-    # def  ReservationPage(self, **kw):
-    #     return http.request.render('modulo_restaurante.reservas')
-
-
-    @http.route('/reservas/submit', type='http', auth='public', methods=['POST'], website=True)
+    @http.route('/reservas/submit', type='http', auth='public',
+                methods=['POST'], website=True)
     def MakeReservation(self, **kw):
-        month_translate = {'Enero':'01', 'Febrero':'02', 'Marzo':'03', 
-        'Abril':'04', 'Mayo':'05', 'Junio':'06', 'Julio':'07', 'Agosto':'08', 
-        'Septiembre':'09', 'Octubre':'10', 'Noviembre':'11', 'Diciembre':'12'}
-        date_str = ",".join([
-            str(kw['day']), 
-            month_translate[kw['month']], 
-            str(datetime.today().year),
+        date_str = "-".join([
+            kw['day'],
             kw['hour']])
-        date_obj = datetime.strptime(date_str, "%d,%m,%Y,%H:%M")
-        date_str = fields.Datetime.to_string(date_obj)
+        date_obj = (datetime.strptime(date_str, "%Y-%m-%d-%H:%M") -
+                    timedelta(hours=2))
+        # date_str = fields.Datetime.to_string(date_obj)
+        # print("date_str2=" + date_str)
         http.request.env['restaurant.reservation'].create({
-            'client_name':kw['client_name'],
-            'client_email':kw['client_email'],
-            'day':date_str,
-            'phone_number':kw['phone_number'],
-            'diners':kw['number_diners']
+            'client_name': kw['client_name'],
+            'client_email': kw['client_email'],
+            'day': date_obj,
+            'phone_number': kw['phone_number'],
+            'diners': kw['number_diners']
         })
-        
+
         return http.request.render('modulo_restaurante.thanks')
