@@ -26,5 +26,5 @@
     'demo': [
         'demo/demo.xml',
     ],
-    'application'=True,
+    'application':True,
 }
