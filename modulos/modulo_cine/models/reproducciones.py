@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
 
@@ -20,16 +20,17 @@ class Reproducciones(models.Model):
 
     @api.model
     def create(self, values):
+        pelicula = self.env['cine.pelicula'].search([("id", "=", values['pelicula_id'])])
         data = {
-            'image': self.pelicula_id.image,
-            'display_name': str(self.pelicula_id.name) + ' ' + str(self.datetime),
+            'image': pelicula.image,
+#           'display_name': str(pelicula.name) + ' ' + str(values['datetime']),
             'type': "consu",
             'categ_id': 1,
             'sale_ok': True,
             'purchase_ok': False,
-            'name': str(self.pelicula_id.name) + ' ' + str(self.datetime),
-            'list_price': self.price,
-            'standard_price': self.price
+            'name': str(pelicula.name) + ' ' + str(values['datetime']),
+            'list_price': values['price'],
+            'standard_price': values['price']
         }
         self.env["product.template"].create(data)
         return super(Reproducciones, self).create(values)
