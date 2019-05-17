@@ -17,7 +17,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="phone_number">Teléfono</label>
-                                                <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="Introduce tu número"/>
+                                                <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Introduce tu número"/>
                                             </div>
                                             <div class="form-group">
                                                 <label for="client_email">Correo electrónico</label>
