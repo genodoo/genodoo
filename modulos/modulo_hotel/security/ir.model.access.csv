@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_viewtractor_viewtractor,viewtractor.viewtractor,model_viewtractor_viewtractor,,1,0,0,0
+access_hotel_book,access_hotel_book,model_hotel_book,base.group_user,1,0,0,0
+access_hotel_room,access_hotel_room,model_hotel_room,base.group_user,1,0,0,0
