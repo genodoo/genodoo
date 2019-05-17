@@ -1,71 +1,102 @@
 <odoo>
     <data>
-        <template id="reservastemplate">
+        <template id="book_page_template">
             <xpath expr="//div[@id='wrap']" position="replace">
                 <t t-call="website.layout">
-                        <!-- A partir de aquí empieza tu código -->
-			     <!-- fields:
-			name:
-			room_id:
-			customer_id:
-			date_in:
-			date_out:
-			-->
-                        <link href="https://fonts.googleapis.com/css?family=Fjalla One|Lato|Roboto" rel="stylesheet"/>
-                        <div id="wrap" class="oe_structure oe_empty" style="font-family: Lato; background-image:url(/modulo_hotel/static/src/img/hotel6.jpeg); background-size:2200px">
-                            <section class="s_image_text">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.7); height: 455">
-                                            <form action="/website_form/" style="margin:10px" method="POST">
+                    <link href="https://fonts.googleapis.com/css?family=Fjalla One|Lato|Roboto" rel="stylesheet"/>
+                    <div id="wrap" class="oe_structure oe_empty" style="font-family: Lato; background-image:url(/modulo_hotel/static/src/img/hotel6.jpeg); background-size:2200px">
+                        <section class="s_image_text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.7); height: 455">
+                                        <form action="/website_form/book" style="margin:10px" method="POST">
                                             <div class="form-group">
                                                 <label for="room_id">Habitación</label>
-                                                <input class="form-control" id="room_id" name="room_id"/>
+                                                <select class="form-control" name="room_id" t-att-value="request.params.get('room_id', '')">
+                                                    <t t-foreach="rooms" t-as="room">
+                                                        <option t-attf-value="{{room.id}}">
+                                                            <t t-esc="room.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
                                             </div>
                                             <div class="form-group">
                                                 <label for="customer_id">Nombre</label>
                                                 <input class="form-control" id="customer_id" name="customer_id"/>
                                             </div>
-                                            <div class="date_in">
-                                                <label for="date_in">Dia de Llegada</label>
-                                                <input type="date"  style="font-family: Roboto; line-height:0.75" class="form-control" id="day_in" name="day_in"/>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="date_in">Dia de Llegada</label>
+                                                    <input type="date" style="font-family: Roboto; line-height:0.75" class="form-control" id="day_in" name="day_in"/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="date_out">Dia de Salida</label>
+                                                    <input type="date" style="font-family: Roboto;line-height:0.75" class="form-control" id="day_out" name="day_out"/>
+                                                </div>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="date_out">Dia de Salida</label>
-                                                <input type="date" style="font-family: Roboto;line-height:0.75" class="form-control" id="day_out" name="day_out"/>
-                                            </div>
-                                            <t t-set="token" t-att-value="request.csrf_token()">
-                                                <input type="hidden" name="csrf_token" t-value="token"/>
-                                                <input type="hidden" name="room_id" t-value="token"/>
-                                            </t>
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                             <button type="submit" class="btn btn-primary" style="margin:15px; background-color:#5a1922;border-color:white;border-radius:0;">RESERVAR</button>
                                         </form>
-                                        </div>
-                                        <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.7); height: 455px">
-                                            <center>
-                                                <img class="img img-responsive" style="filter: invert(100%); margin:17" src="/modulo_hotel/static/src/img/bed.png" data-original-title="" title="" width="276" height="276"/>
-                                            </center>
-                                            <h2 class="o_default_snippet_text" style="font-family: Fjalla One; font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU HABITACIÓN</h2>
-                                            <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
-                                                <font style="font-size: 18px;">
+                                        <!-- <form action="/website_form/" method="post" data-force_action="book" class="s_website_form mt32" senctype="multipart/form-data">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="date_in">Dia de Llegada</label>
+                                                    <input class="form-control" type="date" name="date_in" style="font-family: Roboto; line-height:0.75" required="" t-att-value="request.params.get('date_in', '')"/>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="date_out">Dia de Salida</label>
+                                                    <input class="form-control" type="date" name="date_out" style="font-family: Roboto; line-height:0.75" required="" t-att-value="request.params.get('date_out', '')"/>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <select class="form-control" name="room_id" t-att-value="request.params.get('room_id', '')">
+                                                    <t t-foreach="rooms" t-as="room">
+                                                        <option t-attf-value="{{room.id}}">
+                                                            <t t-esc="room.name"/>
+                                                        </option>
+                                                    </t>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="customer_id">Nombre</label>
+                                                <input class="form-control" id="customer_id" name="customer_id"/>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center">
+                                                    <div class="form-group">
+                                                        <input type="submit" class="btn btn-primary btn-lg o_website_form_send">RESERVAR</input>
+                                                        <span id="o_website_form_result"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form> -->
+
+                                    </div>
+                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.7); height: 455px">
+                                        <center>
+                                            <img class="img img-responsive" style="filter: invert(100%); margin:17" src="/modulo_hotel/static/src/img/bed.png" data-original-title="" title="" width="276" height="276"/>
+                                        </center>
+                                        <h2 class="o_default_snippet_text" style="font-family: Fjalla One; font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU HABITACIÓN</h2>
+                                        <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
+                                            <font style="font-size: 18px;">
             	 				Envíanos un formulario de contacto y te responderemos (normalmente en menos de 24 horas)
             	 				si hay mesa disponible. En caso de no haberla, te facilitaremos algunas opciones similares.
-            	 														</font>
-                                            </p>
-                                        </div>
+                                            </font>
+                                        </p>
                                     </div>
                                 </div>
-                            </section>
+                            </div>
+                        </section>
                         <!-- Aquí termina tu código -->
                     </div>
                 </t>
             </xpath>
         </template>
-        <record id="reservasid" model="website.page">
+        <!-- <record id="reservasid" model="website.page">
             <field name="name">Reservas</field>
             <field name="website_published">True</field>
             <field name="url">/reservashotel</field>
             <field name="view_id" ref="reservastemplate"/>
-        </record>
+        </record> -->
     </data>
 </odoo>
