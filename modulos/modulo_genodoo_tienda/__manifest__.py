@@ -11,21 +11,20 @@
     'author': "The GenOdoo Team",
     'website': "github.com/genodoo",
 
-    'category': 'Diseño',
+    'category': 'Diseño' 'Comercio',
     'version': '1.0',
 
-    'depends': ['base', 'website', 'website_sale'],
+    'depends': ['base', 'website'],
 
     # always loaded
     'data': [
-        'templates/template_gestion.xml',
-        #'templates/view_formulario.xml',
-        'templates/template_cine.xml',
-        'templates/template_hotel.xml',
-        'templates/template_personalizado.xml',
-        'templates/template_restaurante.xml',
-        'templates/template_tienda.xml',
-        #'security/ir.model.access.csv',
+	'templates/template_gestion.xml',
+	#'templates/template_formulario.xml',
+	'templates/template_cine.xml',
+	'templates/template_hotel.xml',
+	'templates/template_personalizado.xml',
+	'templates/template_restaurante.xml',
+	'templates/template_tienda.xml',
+    #'templates/view_formulario.xml',
     ],
-    'application':True,
 }

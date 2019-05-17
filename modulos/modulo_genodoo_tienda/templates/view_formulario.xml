@@ -1,15 +1,39 @@
- <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
-	<record id="view_formulario" model="ir.ui.view">
-		<field name="Nombre">Formulario de pedido</field>
-		<field name="arch" type="xml">
-			<form string= "Realizar pedido">			
-				<group>
-					<field name="Nombre" />
-					<field name="Correo" />
-					<field name="Teléfono" />
-				</group>
-			</form>
-		</field>
-	</record>
+    <data>
+        <record id="genodoo_pedido_tree" model="ir.ui.view">
+            <field name="name">genodoo.pedido.tree</field>
+            <field name="model">genodoo.pedido</field>
+            <field name="arch" type="xml">
+                <tree string="Pedido" editable="top">
+                    <field name="nombre"/>
+                    <field name="correo"/>
+                    <field name="telefono"/>
+                    <field name="modulo"/>
+                    <field name="tarifa"/>
+                    <field name="info_extra"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Action opening views on models-->
+    	<record id="genodoo_view_formulario" model="ir.action.act_window">
+    		<field name="name">GenOdoo Pedido</field>
+            <field name="type">ir.action.act_window</field>
+            <field name="res_model">genodoo.pedido</field>
+            <field name="view_model">tree, form</field>
+            <field name="view_type">form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haz click para realizar un pedido
+                </p>
+                <p> </p>
+    		</field>
+    	</record>
+
+        <!--Top menu item-->
+        <menuitem name="GenOdooPedido" id="genodoo_pedido.menu_root"/>
+
+        <menuitem name="Pedido" id="genodoo_pedido.pedido" parent="genodoo_pedido.menu_root"/>
+        <menuitem name="Pedido" id="genodoo_pedido.menu_1_list" parent="genodoo_pedido.pedido" action="genodoo_view_formulario"/>
+    </data>
 </odoo>

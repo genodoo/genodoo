@@ -27,6 +27,17 @@ class PageController(http.Controller):
         return http.request.render('modulo_genodoo_tienda.Modulo_GenOdoo_personalizado')
 
 class PageController(http.Controller):
-    @http.route('/shop', type='http', auth='public', methods=['GET'], website=True)
+    @http.route('/modulos', type='http', auth='public', methods=['GET'], website=True)
     def page_modulos(self, **kw):
         return http.request.render('modulo_genodoo_tienda.Modulos_GenOdoo')
+
+#class WebsiteForm(WebsiteForm):
+#    @http.route('/website_form /pedidos', type='http', auth='public', methods=['POST'], website=True)
+#    def form_pedidos(self, **kw):
+#       pedido_id = request.env["genodoo.pedido"].create(kw)
+#       return json.dump({'id': pedido_id})
+
+#class WebsitePedido(http.controller):
+#    @http.route('/pedidos', type='http', auth='public', methods=['GET'], website=True)
+#    def page_pedidos(self, **kw):
+#       request.render('modulo_genodoo_tienda.Pagina_pedidos')
