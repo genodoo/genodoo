@@ -26,3 +26,10 @@ Ya tendríamos nuestro Odoo montado en la dirección http://localhost:8069/web
 
 Creamos una BD con el nombre que queramos e instalamos el módulo del paquete que queramos aplicar. 
 Recomendamos crear una base de datos distinta para cada módulo puesto que estos no están pensados para ser instalados al mismo tiempo en la misma instancia. Puedes hacerlo desde http://localhost:8069/web/database/manager
+
+
+# Otros datos
+
+## IBM Watson
+correo: i72moprf@uco.es
+pass: IBMWatson9
