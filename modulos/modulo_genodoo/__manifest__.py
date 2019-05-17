@@ -18,7 +18,7 @@
     'version': '1.0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website'],
+    'depends': ['base', 'website', 'website_form'],
 
     # always loaded
     'data': [
@@ -27,6 +27,15 @@
         'views/templates.xml',
         'views/home.xml',
         'views/newpage.xml',
+        'templates/template_gestion.xml',
+        'templates/template_formulario.xml',
+        'templates/template_cine.xml',
+        'templates/template_hotel.xml',
+        'templates/template_personalizado.xml',
+        'templates/template_restaurante.xml',
+        'templates/template_tienda.xml',
+        'templates/view_formulario.xml',
+        'data/website_data.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

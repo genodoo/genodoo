@@ -34,7 +34,7 @@
         <!--Top menu item-->
         <menuitem name="GenOdooPedido" id="menu_root_1"/>
 
-        <menuitem name="Pedido" id="modulo_genodoo_tienda.pedido" parent="modulo_genodoo_tienda.menu_root_1"/>
-        <menuitem name="Pedido" id="modulo_genodoo_tienda.menu_1_list" parent="modulo_genodoo_tienda.pedido" action="genodoo_view_formulario"/>
+        <menuitem name="Pedido" id="modulo_genodoo.pedido" parent="modulo_genodoo.menu_root_1"/>
+        <menuitem name="Pedido" id="modulo_genodoo.menu_1_list" parent="modulo_genodoo.pedido" action="genodoo_view_formulario"/>
     </data>
 </odoo>
