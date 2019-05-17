@@ -27,7 +27,7 @@
         'views/views.xml',
         # 'views/templates.xml',
         'views/home.xml',
-        'views/reservas.xml',
+        'views/reservashotel.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
