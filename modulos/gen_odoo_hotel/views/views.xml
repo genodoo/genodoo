@@ -1,0 +1,71 @@
+<odoo>
+  <data>
+
+    <record id="hotel_room_tree" model="ir.ui.view">
+      <field name="name">hotel.room.tree</field>
+      <field name="model">hotel.room</field>
+      <field name="arch" type="xml">
+        <tree string="Hotel Rooms" editable="top">
+          <field name="name"/>
+          <field name="room_number"/>
+          <field name="room_floor"/>
+          <field name="room_size"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+    <record id="hotel_room_action" model="ir.actions.act_window">
+      <field name="name">Hotel Room</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">hotel.room</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+                Click to add a new hotel room in your book.
+        </p>
+        <p> </p>
+      </field>
+    </record>
+
+    <record id="hotel_book_tree" model="ir.ui.view">
+      <field name="name">hotel.book.tree</field>
+      <field name="model">hotel.book</field>
+      <field name="arch" type="xml">
+        <tree string="Hotel book" editable="top">
+          <field name="name"/>
+          <field name="room_id"/>
+          <field name="customer_id"/>
+          <field name="date_in" widget="date"/>
+          <field name="date_out" widget="date"/>
+        </tree>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+    <record id="hotel_book_action" model="ir.actions.act_window">
+      <field name="name">Hotel book</field>
+      <field name="type">ir.actions.act_window</field>
+      <field name="res_model">hotel.book</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="help" type="html">
+        <p class="oe_view_nocontent_create">
+                Click to add a new hotel book in your book.
+        </p>
+        <p> </p>
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+    <menuitem name="Hotel" id="gen_odoo_hotel.menu_root"/>
+
+    <menuitem name="Rooms" id="gen_odoo_hotel.rooms" parent="gen_odoo_hotel.menu_root"/>
+    <menuitem name="Rooms" id="gen_odoo_hotel.menu_1_list" parent="gen_odoo_hotel.rooms" action="gen_odoo_hotel.hotel_room_action"/>
+    <menuitem name="Books" id="gen_odoo_hotel.menu_2_list" parent="gen_odoo_hotel.rooms" action="gen_odoo_hotel.hotel_book_action"/>
+  </data>
+</odoo>

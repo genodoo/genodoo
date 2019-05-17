@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "modulo_cine",
+    'name': "Genodoo Cinema",
 
     'summary': """Gestion de empresas de cine""",
 
@@ -14,7 +14,12 @@
     'category': 'Sales, Specific Industry Applications, Website',
     'version': '0.1',
 
-    'depends': ['base', 'sale_management'],
+    'depends': [
+        'base',
+        'sale_management',
+        'website',
+        'point_of_sale'
+    ],
 
     # always loaded
     'data': [

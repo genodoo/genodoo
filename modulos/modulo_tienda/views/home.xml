@@ -2,155 +2,190 @@
     <data>
         <template id="home" inherit_id="website.homepage">
             <xpath expr="//div[@id='wrap']" position="replace">
-               <div id="wrap" class="oe_structure oe_empty">
-               <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Merriweather|Raleway|Playfair+Display|Unna|Fredericka+the+Great|Cabin+Sketch|Copse|Gruppo|Nixie+One|Coustard|Major+Mono+Display" rel="stylesheet"/>
-		  <div id="myCarousel1557590617997" class="carousel slide s_banner mb0" data-interval="3000" style="height: 400px;">
-			<ol class="carousel-indicators">
-			  <li data-target="#myCarousel1557590617997" data-slide-to="0" class="active">
-			    <br/>
-			  </li>
-			  <li data-target="#myCarousel1557590617997" data-slide-to="1">
-			    <br/>
-			  </li>
-			  <li data-target="#myCarousel1557590617997" data-slide-to="2">
-			    <br/>
-			  </li>
-			</ol>
-			<div class="carousel-inner" style="font-family: Raleway">
-			  <div class="item bg-info active" style="">
-			    <div class="container">
-			      <div class="row content">
-				<div class="carousel-content col-md-4 col-md-offset-1 mt128 mb96 bg-primary" style="">
-				  <h2>¿Necesitas ayuda?<br/></h2>
-				  <h4>¡Te resolvemos todas tus dudas!</h4>
-				  <p>
-				    <a href="/contactus" class="btn btn-gamma" data-original-title="" title="">Contáctenos</a>
-				  </p>
+                <link href="https://fonts.googleapis.com/css?family=Raleway|Cabin+Sketch|Major+Mono+Display" rel="stylesheet"/>
+			<div id="wrap" class="oe_structure oe_empty" style="font-family:Raleway">
+			    <div id="myCarousel1557590617997" class="carousel slide s_banner mb0" data-interval="3000" style="height: 400px;">
+				<ol class="carousel-indicators">
+				    <li data-target="#myCarousel1557590617997" data-slide-to="0">
+				        <br/>
+				    </li>
+				    <li data-target="#myCarousel1557590617997" data-slide-to="1" class="active">
+				        <br/>
+				    </li>
+				    <li data-target="#myCarousel1557590617997" data-slide-to="2">
+				        <br/>
+				    </li>
+				</ol>
+				<div class="carousel-inner" style="font-family: Raleway">
+				    <div class="item bg-info" style="background-image: url(/modulo_tienda/static/src/img/head1.jpg); background-position:center">
+				        <div class="container">
+				            <div class="row content">
+				                <div class="carousel-content col-md-4 col-md-offset-1 bg-black-50 mt128 mb96 bg-primary" style="">
+				                    <h2>¿Necesitas ayuda? 
+				                        <br/>
+				                    </h2>
+				                    <h4>¡Te resolvemos todas tus dudas!</h4>
+				                    <p>
+				                        <a href="/contactus" class="btn btn-gamma" data-original-title="" title="">Contáctenos</a>
+				                    </p>
+				                </div>
+				                <div class="carousel-img hidden-sm hidden-xs mt48 col-md-4 col-md-offset-3" style="">
+				                    <img class="img-responsive" src="/modulo_tienda/static/src/img/help.png" style="filter: invert(100)" data-original-title="" title=""/>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="item bg-white active" style="background-image: url(/modulo_tienda/static/src/img/head2.jpg)">
+				        <div class="container">
+				            <div class="row content">
+				                <div class="carousel-content col-md-4 col-md-offset-1 mb96 bg-black-50 mt92" style="">
+				                    <h2>¿A qué esperas? ¡Únete!</h2>
+				                    <h2>
+				                        <font style="font-size: 18px;">¡Queda al tanto de nuestras últimas novedades y chollos!</font>
+				                    </h2>
+				                    <h2>
+				                        <a href="/contactus" class="btn btn-warning" data-original-title="" title="">
+				                            <font style="color: rgb(57, 123, 33);" data-original-title="" title="">Registrarse</font>
+				                        </a>
+				                    </h2>
+				                </div>
+				                <div class="carousel-img hidden-sm hidden-xs col-md-4 col-md-offset-3 mb0 mt16" style="">
+				                    <img class="img-responsive" src="/modulo_tienda/static/src/img/sam.png" data-original-title="" title=""/>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				    <div class="item bg-gamma" style="background-image: url(/modulo_tienda/static/src/img/head3.jpg)">
+				        <div class="container">
+				            <div class="row content">
+				                <div class="carousel-content mt128 mb96 col-md-4 col-md-offset-1 bg-black-25">
+				                    <h2>Ofertas y promociones 
+				                        <br/>
+				                    </h2>
+				                    <h4>Te mostramos ofertas de temporada, outlet, promociones... ¡No te lo pierdas!</h4>
+				                    <h4>
+				                        <a href="http://localhost:8069/contactus" class="btn btn-success" data-original-title="" title="">Ofertas</a>
+				                    </h4>
+				                </div>
+				                <div class="carousel-img hidden-sm hidden-xs mt0 col-md-4 col-md-offset-3">
+				                    <img class="img-responsive" src="/modulo_tienda/static/src/img/sale.png" data-original-title="" title=""/>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
 				</div>
-				<div class="carousel-img hidden-sm hidden-xs mt48 col-md-4 col-md-offset-3" style="">
-				  <img class="img-responsive" src="https://images.vexels.com/media/users/3/155301/isolated/preview/6a91c0d6c8ba37a9fd115e1776300319-pregunta-3d-doodle-de-pregunta-by-vexels.png" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+				<div class="carousel-control left" data-target="#myCarousel1557590617997" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557590617997">
+				    <i class="fa fa-chevron-left"/>
 				</div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="item bg-white" style="">
-			    <div class="container">
-			      <div class="row content">
-				<div class="carousel-content col-md-4 col-md-offset-1 mb96 bg-black-50 mt92" style="">
-				  <h2>¿A qué esperas? ¡Únete!</h2>
-				  <h2>
-				    <font style="font-size: 18px;">¡Queda al tanto de nuestras últimas novedades y chollos!</font>
-				  </h2>
-				  <h2>
-				    <a href="/contactus" class="btn btn-warning" data-original-title="" title="">
-				      <font style="color: rgb(57, 123, 33);" data-original-title="" title="">Registrarse</font>
-				    </a>
-				  </h2>
+				<div class="carousel-control right" data-target="#myCarousel1557590617997" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1557590617997">
+				    <i class="fa fa-chevron-right" data-original-title="" title=""/>
 				</div>
-				<div class="carousel-img hidden-sm hidden-xs col-md-4 col-md-offset-3 mb0 mt16" style="">
-				  <img class="img-responsive" src="https://rlv.zcache.es/poster_el_tio_sam_quisiera_que_usted_jugara_a_tenis-raf93834b072d44b5b0b6ec3ab1ce8dff_fuzh_8byvr_540.jpg" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+			    </div>
+			    <section class="s_features mt32">
+				<div class="container" style="font-family: Raleway">
+				    <div class="row mt16 mb16">
+				        <div class="col-md-4 text-center">
+				            <span class="fa fa-search fa-5x" data-original-title="" title="" style=""/>
+				            <div>
+				                <h3 class="mb0 mt8">Justo lo que necesitas 
+				                    <br/>
+				                </h3>
+				                <p class="text-muted">Si no es lo que buscabas, es lo que necesitabas. 
+				                    <br/>
+				                </p>
+				            </div>
+				        </div>
+				        <div class="col-md-4 text-center">
+				            <span class="fa fa-thumbs-o-up fa-5x" style=""/>
+				            <div>
+				                <h3 class="mb0 mt8">Máxima calidad y garantía 
+				                    <br/>
+				                </h3>
+				                <p class="text-muted">Te aseguramos la gran calidad de nuestros productos, y si tienes algún problema te damos una garantía de 2 años. 
+				                    <br/>
+				                </p>
+				            </div>
+				        </div>
+				        <div class="col-md-4 text-center">
+				            <span class="fa fa-euro fa-5x" style=""/>
+				            <div>
+				                <h3 class="mb0 mt8">Mejor relación calidad/precio 
+				                    <br/>
+				                </h3>
+				                <p class="text-muted">Si hay algo que nos caracteriza es la competitividad de nuestros precios, que pese a ser una pequeña empresa ofrecemos la mejor relación calidad/precio. 
+				                    <br/>
+				                </p>
+				            </div>
+				        </div>
+				    </div>
 				</div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="item bg-gamma">
-			    <div class="container">
-			      <div class="row content">
-				<div class="carousel-content mt128 mb96 col-md-4 col-md-offset-1 bg-black-25">
-				  <h2>Ofertas y promociones<br/></h2>
-				  <h4>Te mostramos ofertas de temporada, outlet, promociones... ¡No te lo pierdas!</h4>
-				  <h4>
-				    <a href="http://localhost:8069/contactus" class="btn btn-success" data-original-title="" title="">Ofertas</a>
-				  </h4>
+			    </section>
+			    <section class="s_image_text mb128 bg-beta oe_img_bg oe_custom_bg mt32" style="background-image: url(/modulo_tienda/static/src/img/head4.jpg);">
+				<div class="container">
+				    <div class="row">
+				        <div class="col-md-6 mb8 mt64">
+				            <h3>
+				                <font style="font-size: 48px; font-family: Cabin Sketch" class="text-white">Sobre nosotros</font>
+				            </h3>
+				            <p>
+				                <font style="font-size: 24px" class="text-white">Somos tres socios apasionados del tenis que buscan ofrecer a sus clientes la mejor calidad de productos con el precio más competitivo. </font>
+				            </p>
+				        </div>
+				    </div>
 				</div>
-				<div class="carousel-img hidden-sm hidden-xs mt0 col-md-4 col-md-offset-3">
-				  <img class="img-responsive" src="/web/image/382/sale.png" alt="Imagen de Odoo para control deslizante" data-original-title="" title=""/>
+			    </section>
+			    <section class="s_title mt0 bg-white" style="font-family: Major Mono Display">
+				<div class="container" style="Coustard">
+				    <div class="row">
+				        <div class="col-md-12 mt0 mb0">
+				            <h1 class="text-center">
+				                <font style="color: rgb(0, 0, 0);">Nuestros productos más vendidos</font>
+				            </h1>
+				            <h3 class="text-center text-muted">&amp;nbsp;</h3>
+				        </div>
+				    </div>
 				</div>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-			<div class="carousel-control left" data-target="#myCarousel1557590617997" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557590617997">
-			  <i class="fa fa-chevron-left"/>
-			</div>
-			<div class="carousel-control right" data-target="#myCarousel1557590617997" data-slide="next" style="width: 10%" data-cke-saved-href="#myCarousel1557590617997">
-			  <i class="fa fa-chevron-right" data-original-title="" title=""/>
-			</div>
-		      </div>
-		      <section class="s_features mt128">
-			<div class="container" style="font-family: Raleway">
-			  <div class="row mt16 mb16">
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-crosshairs fa-5x" data-original-title="" title="" style=""/>
-			      <div>
-				<h3 class="mb0 mt8">Justo lo que necesitas<br/></h3>
-				<p class="text-muted">Si no es lo que buscabas, es lo que necesitabas.<br/></p>
-			      </div>
-			    </div>
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-lock fa-5x"/>
-			      <div>
-				<h3 class="mb0 mt8">Máxima calidad y garantía<br/></h3>
-				<p class="text-muted">Te aseguramos la gran calidad de nuestros productos, y si tienes algún problema te damos una garantía de 2 años.<br/></p>
-			      </div>
-			    </div>
-			    <div class="col-md-4 text-center">
-			      <span class="fa fa-euro fa-5x" style=""/>
-			      <div>
-				<h3 class="mb0 mt8">Mejor relación calidad/precio<br/></h3>
-				<p class="text-muted">Si hay algo que nos caracteriza es la competitividad de nuestros precios, que pese a ser una pequeña empresa ofrecemos la mejor relación calidad/precio.<br/></p>
-			      </div>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="s_image_text mt128 mb128 bg-beta oe_img_bg oe_custom_bg" style="background-image: url(http://getwallpapers.com/wallpaper/full/9/1/9/510868.jpg);">
-			<div class="container" style="font-family: Cabin Sketch">
-			  <div class="row">
-			    <div class="col-md-6 mb8 mt64">
-			      <h3>
-				<font style="font-size: 48px; font-family: Cabin Sketch" class="text-white">Sobre nosotros</font>
-			      </h3>
-			      <p>
-				<font style="font-size: 24px; font-family: Cabin Sketch" class="text-white">Somos tres socios apasionados del tenis que buscan ofrecer a sus clientes la mejor calidad de productos con el precio más competitivo. </font>
-			      </p>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="s_title mt0 bg-white" style="font-family: Major Mono Display">
-			<div class="container" style="Coustard">
-			  <div class="row">
-			    <div class="col-md-12 mt0 mb0">
-			      <h1 class="text-center">
-				<font style="color: rgb(0, 0, 0);">Nuestros productos más vendidos</font>
-			      </h1>
-			      <h3 class="text-center text-muted">&amp;nbsp;</h3>
-			    </div>
-			  </div>
-			</div>
-		      </section>
-		      <section class="s_three_columns mt0">
-			<div class="container">
-			  <div class="row" style="font-family: Raleway">
-			    <div class="col-md-4 mt32 mb48">
-			      <img class="img img-responsive" src="https://cdn.shoplightspeed.com/shops/607570/files/11903044/800x600x2/babolat-pure-drive-vs-2019-tennis-racquet.jpg" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title=""/>
-			      <h4 class="mt16">Babolat Pure Drive (2019)<br/></h4>
-			      <p>Última versión de este legendario modelo.<br/></p>
-			    </div>
-			    <div class="col-md-4 mt32 mb48">
-			      <img class="img img-responsive" src="https://cdn9.bigcommerce.com/s-6bwfrd0y/products/3513/images/13329/pd-lite-2__44937.1531313098.1280.1280.gif?c=2" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
-			      <h4 class="mt16">Babolat Pure Drive (2018)<br/></h4>
-			      <p>La raqueta más vendida en 2018. Soltura a la vez que agarre.<br/></p>
-			    </div>
-			    <div class="col-md-4 mt32 mb48">
-			      <img class="img img-responsive" src="https://i.ibb.co/LvJr2Wd/Sin-t-tulo-1.png" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
-			      <h4 class="mt16">Pelotas de tenis Head Tour<br/></h4>
-			      <p>Las mejores pelotas del mercado, conservan su aire durante un largo tiempo incluso bajo un gran estrés.<br/></p>
-			    </div>
-			  </div>
-			</div>
-		      </section>
+			    </section>
+			    <section class="o_gallery s_image_gallery o_slideshow o_spc-medium" data-columns="3" style="overflow: hidden; height: 666px;">
+				<div class="container">
+				    <div class="carousel slide" data-ride="carousel" style="margin: 0 12px;" id="slideshow_1558035778694" data-interval="false">
+				        <div class="carousel-inner container" style="padding: 0;">
+				            <div class="item">
+				                <img class="img img-responsive shadow" src="modulo_tienda/static/src/img/puredrive.png" data-index="0"/>
+				            </div>
+				            <div class="item">
+				                <img class="img img-responsive shadow" src="modulo_tienda/static/src/img/puredrive2018.png" data-index="1"/>
+				            </div>
+				            <div class="item active">
+				                <img class="img img-responsive shadow" src="modulo_tienda/static/src/img/pelotas.png" data-index="2"/>
+				            </div>
+				        </div>
+				        <ul class="carousel-indicators">
+				            <li class="fa fa-chevron-left o_indicators_left" style="overflow: hidden; padding: 12px; border: 0px none;">
+				                <br/>
+				            </li>
+				            <li data-target="#slideshow_1558035778694" data-slide-to="0" style="background-image: url(&quot;modulo_tienda/static/src/img/puredrive.png&quot;);">
+				                <br/>
+				            </li>
+				            <li data-target="#slideshow_1558035778694" data-slide-to="1" class="false" style="background-image: url(modulo_tienda/static/src/img/puredrive2018.png)">
+				                <br/>
+				            </li>
+				            <li data-target="#slideshow_1558035778694" data-slide-to="2" class="false active" style="background-image: url(modulo_tienda/static/src/img/pelotas.png)">
+				                <br/>
+				            </li>
+				            <li class="fa fa-chevron-right o_indicators_right" style="overflow: hidden; padding: 12px; border: 0px none;">
+				                <br/>
+				            </li>
+				        </ul>
+				        <a class="carousel-control left" data-slide="prev" href="#slideshow_1558035778694">
+				            <span class="fa fa-chevron-left"/>
+				        </a>
+				        <a class="carousel-control right" data-slide="next" href="#slideshow_1558035778694">
+				            <span class="fa fa-chevron-right"/>
+				        </a>
+				    </div>
+				</div>
+			    </section>
                <!-- Aquí termina tu código -->
               </div>
             </xpath>

@@ -1,0 +1,41 @@
+ <?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="Pagina_pedidos">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="container">
+                        <form action="/website_form/" method="post" data-foce_action="book"
+                             class="s_website_form mt32" data_sucess_page="/"
+                             senctype="multipart/form-data" data-editable-form="false">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="Nombre" requiered="">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="Correo" requiered="">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="Teléfono">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="Módulo deseado" requiered=""/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="Tarifa" requiered=""/>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="Información adicional"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </templates>
+    </data>
+</odoo>
