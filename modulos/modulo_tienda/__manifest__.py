@@ -16,7 +16,7 @@
         'website_form',
         'website_rating',
         'sale_management',
-        'point_of_sale'
+        'point_of_sale',
     ],
     'data': [
         'views/home.xml',
