@@ -27,12 +27,12 @@
 		            </li>
 		        </ol>
 		        <div class="carousel-inner">
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg active" style="background-image: url(/modulo_cine/static/src/img/aladdin.jpg);"></div>
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/pikachu.jpg);"></div>
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/vengadores.jpg);"></div>
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/hermanossisters.jpg);"></div>
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/xmen.jpg);"></div>
-		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/hellboy.jpg);"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg active" style="background-image: url(/modulo_cine/static/src/img/aladdin.jpg); background-position: center"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/pikachu.jpg); background-position: center"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/vengadores.jpg); background-position: center"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/hermanossisters.jpg); background-position: center"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/xmen.jpg); background-position: center"></div>
+		            <div class="item bg-alpha oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/hellboy.jpg); background-position: center"></div>
 		        </div>
 		        <div class="carousel-control left" data-target="#myCarousel1557932673181" data-slide="prev" style="width: 10%" data-cke-saved-href="#myCarousel1557932673181">
 		            <i class="fa fa-chevron-left"/>
@@ -50,7 +50,7 @@
 		            </div>
 		        </div>
 		    </section>
-		    <section class="s_comparisons bg-primary oe_img_bg oe_custom_bg" style="background-image: url(http://staticdn.lovities.com/img/tag/1582282047/peliculas-recomendadas-13382.jpg);">
+		    <section class="s_comparisons bg-primary oe_img_bg oe_custom_bg" style="background-image: url(/modulo_cine/static/src/img/cine1.jpg);">
 		        <div class="container">
 		            <h2 class="text-center">
 		                <br/>
@@ -75,7 +75,7 @@
 		                            <p class="text-muted">
 		                                <i>Vea el estreno del año o la entrega puntual de su saga favorita</i>
 		                            </p>
-		                            <a href="/comprar_entrada" class="btn btn-primary btn-lg" style="background-color: #7b1e1e; font-family: Roboto Condensed" data-original-title="" title="">¡COMPRA TU ENTRADA!</a>
+		                            <a href="https://cine.entradas.com/" class="btn btn-primary btn-lg" style="background-color: #7b1e1e; font-family: Roboto Condensed" data-original-title="" title="">¡COMPRA TU ENTRADA!</a>
 		                        </div>
 		                    </div>
 		                </div>
@@ -118,7 +118,7 @@
 		                            <p class="text-muted">
 		                                <i>Para todos aquellos que nos gusta ver una buena pelicula de vez en cuando</i>
 		                            </p>
-		                            <a href="/comprar_bono_min" class="btn btn-primary btn-lg" style="background-color: #808080; font-family: Roboto Condensed" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
+		                            <a href="/comprar_bono" class="btn btn-primary btn-lg" style="background-color: #808080; font-family: Roboto Condensed" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
 		                        </div>
 		                    </div>
 		                </div>
@@ -151,7 +151,7 @@
 		                            <p class="text-muted">
 		                                <i>Easy Rider (1969)</i>
 		                            </p>
-		                            <a href="/comprar_bono_max" class="btn btn-primary btn-lg" style="background-color: #DAA520; font-family: Roboto Condensed" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
+		                            <a href="/comprar_bono" class="btn btn-primary btn-lg" style="background-color: #DAA520; font-family: Roboto Condensed" data-original-title="" title="">¡ADQUIERE TU BONO!</a>
 		                        </div>
 		                    </div>
 		                </div>
@@ -194,17 +194,17 @@
 		        <div class="container">
 		            <div class="row">
 		                <div class="col-md-4 mt32 mb48">
-		                    <img class="img img-responsive" src="http://1.bp.blogspot.com/-iSonoYI6IkE/TfUdiK9MI4I/AAAAAAAAAPU/4u6t2z4vPjc/s1600/07.jpg" alt="Odoo - Prueba 1 a tres columnas" data-original-title="" title="" aria-describedby="tooltip211840"/>
+		                    <img class="img img-responsive" src="http://1.bp.blogspot.com/-iSonoYI6IkE/TfUdiK9MI4I/AAAAAAAAAPU/4u6t2z4vPjc/s1600/07.jpg" data-original-title="" title="" aria-describedby="tooltip211840"/>
 		                    <h4 class="mt16">El Padrino</h4>
 		                    <p class="o_default_snippet_text"> El Padrino (título original en inglés: The Godfather) es una película estadounidense de 1972 dirigida por Francis Ford Coppola. El filme fue producido por Albert S. Ruddy, de la compañía Paramount Pictures. Está basada en la novela homónima (que a su vez está basada en la familia real de los Mortillaro de Sicilia), de Mario Puzo, quien adaptó el guión junto a Coppola y Robert Towne, este último sin ser acreditado. </p>
 		                </div>
 		                <div class="col-md-4 mt32 mb48">
-		                    <img class="img img-responsive" src="http://s1.1zoom.me/b5050/41/114420-stranger_1024x768.jpg" alt="Odoo - Prueba 2 a tres columnas" data-original-title="" title=""/>
+		                    <img class="img img-responsive" src="http://s1.1zoom.me/b5050/41/114420-stranger_1024x768.jpg" data-original-title="" title=""/>
 		                    <h4 class="mt16">La Momia: La Tumba del Emperador Dragón</h4>
 		                    <p class="o_default_snippet_text"> La momia: la tumba del emperador Dragón es una película estadounidense de acción, fantasía y aventuras estrenada en 2008. Es la tercera y última parte de la Trilogía de la Momia. El film es protagonizado por Brendan Fraser, Jet Li, Maria Bello, John Hannah, Luke Ford, y Michelle Yeoh. Fue estrenada en los Estados Unidos el 1 de agosto de 2008. </p>
 		                </div>
 		                <div class="col-md-4 mt32 mb48">
-		                    <img class="img img-responsive" src="http://www.1zoom.me/big2/4/202310-Sepik.jpg" alt="Odoo - Prueba 3 a tres columnas" data-original-title="" title=""/>
+		                    <img class="img img-responsive" src="http://www.1zoom.me/big2/4/202310-Sepik.jpg" data-original-title="" title=""/>
 		                    <h4 class="mt16">Tarzan</h4>
 		                    <p class="o_default_snippet_text"> Tarzán (en inglés: Tarzan) es un personaje ficticio creado por Edgar Rice Burroughs. Su primera aparición fue en la revista pulp All Story Magazine en octubre de 1912, adaptado posteriormente como novela (Tarzán de los monos) y a la que sucedieron veintitrés secuelas, además de haber sido adaptado numerosas veces, especialmente en los cómics, así como en cine y televisión. </p>
 		                </div>

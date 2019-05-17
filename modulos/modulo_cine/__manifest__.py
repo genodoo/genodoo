@@ -12,7 +12,7 @@
     'website': "https://www.genodoo.com",
 
     'category': 'Sales, Specific Industry Applications, Website',
-    'version': '0.1',
+    'version': '1.0',
 
     'depends': [
         'base',
@@ -26,6 +26,7 @@
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/template.xml',
+        'views/bono.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
