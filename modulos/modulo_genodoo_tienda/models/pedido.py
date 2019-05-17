@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
-"""
+
 class Pedido(models.Model):
 
     _name = 'genodoo.pedido'
 
-    nombre = fields.Char(
+    name = fields.Char(
         string='Nombre',
         required=True,
     )
@@ -17,15 +17,15 @@ class Pedido(models.Model):
     telefono = fields.Integer(
         string='Teléfono',
     )
-    modulo = fields.Char(
+    modulo = fields.Selection(
         string='Módulo deseado',
-        required=True,
+        selection=[("tienda", "Tienda"), ("resta", "Restaurante"), ("hotel", "Hotel"), ("cine", "Cine"), ("persona", "Personalizado")]
     )
-    tarifa = fields.Char(
-        string='Tarifa a pedir',
-        required=True,
+    tarifa = fields.Selection(
+        string='Tarifa',
+        selection=[("base", "Basico"), ("avan", "Avanzado"), ("expe", "Experto")]
     )
     info_extra = fields.Char(
         string='Información adicional',
     )
-"""
+

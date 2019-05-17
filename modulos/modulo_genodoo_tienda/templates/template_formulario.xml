@@ -1,4 +1,4 @@
- <?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
         <template id="Pagina_pedidos">
@@ -6,36 +6,69 @@
                 <div id="wrap">
                     <div class="oe_structure"/>
                     <div class="container">
-                        <form action="/website_form/" method="post" data-foce_action="book"
-                             class="s_website_form mt32" data_sucess_page="/"
-                             senctype="multipart/form-data" data-editable-form="false">
+                        <form action="/website_form/" method="post" data-force_action="pedidos"
+                            data-success_page="/" class="s_website_form mt32"
+                            enctype="multipart/form-data" data-editable-form="false">
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Nombre" requiered="">
+                                    <label class="control-label" for="name">Nombre</label>
+                                    <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Correo" requiered="">
+                                    <label class="control-label" for="correo">Correo</label>
+                                    <input type="email" class="form-control o_website_form_input" name="correo" required="" t-att-value="request.params.get('correo', '')" />
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Teléfono">
+                                    <label class="control-label" for="telefono">Telefono</label>
+                                    <input type="email" class="form-control o_website_form_input" name="telefono" required="" t-att-value="request.params.get('telefono', '')" />
                                 </div>
                             </div>
+                            <br/>
+                            <br/>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Módulo deseado" requiered=""/>
+                                    <label class="control-label" for="modulo">Paquete Deseado</label>
+                                    <select class="form-control" name="modulo" required="" t-att-value="request.params.get('modulo', '')" >
+                                        <option t-attf-value="tienda">Tienda</option>
+                                        <option t-attf-value="resta">Restaurante</option>
+                                        <option t-attf-value="hotel">Hotel</option>
+                                        <option t-attf-value="cine">Cine</option>
+                                        <option t-attf-value="persona">Personalizado</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" class="form-control" name="Tarifa" requiered=""/>
+                                    <label class="control-label" for="tarifa">Tarifa</label>
+                                    <select class="form-control" name="tarifa" required="" t-att-value="request.params.get('tarifa', '')" >
+                                        <option t-attf-value="base">Basico</option>
+                                        <option t-attf-value="avan">Avanzado</option>
+                                        <option t-attf-value="expe">Experto</option>
+                                    </select>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" name="Información adicional"/>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label class="control-label" for="info_extra">Info extra</label>
+                                    <textarea rows="6" name="info_extra" class="form-control o_website_form_input" t-att-value="request.params.get('info_extra', '')"/>
+                                </div>
                             </div>
+                            <br/>
+                            <br/>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="form-group">
+                                        <span class="btn btn-primary btn-lg o_website_form_send">Send</span>
+                                        <span id="o_website_form_result"></span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </form>
                     </div>
                     <div class="oe_structure"/>
                 </div>
             </t>
-        </templates>
+        </template>
     </data>
 </odoo>
