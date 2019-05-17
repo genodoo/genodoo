@@ -19,6 +19,12 @@
                             <div class="item">
                               <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/cine1.png" data-index="1"/>
                             </div>
+                            <div class="item">
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/cine2.png" data-index="2"/>
+                            </div>
+                            <div class="item">
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/cine3.png" data-index="3"/>
+                            </div>
                           </div>
                           <a class="carousel-control left" data-slide="prev" href="#slideshow_1557773365274">
                             <span class="fa fa-chevron-left"/>

@@ -17,10 +17,13 @@
                               <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/tienda.png" data-index="0" data-original-title="" title=""/>
                             </div>
                             <div class="item">
-                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/hotel.png" data-index="1"/>
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/tienda1.png" data-index="1"/>
                             </div>
                             <div class="item">
-                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/personalizado.png" data-index="2"/>
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/tienda2.png" data-index="2"/>
+                            </div>
+                            <div class="item">
+                              <img class="img img-responsive " src="/modulo_genodoo_tienda/static/src/img/tienda3.png" data-index="3"/>
                             </div>
                           </div>
                           <a class="carousel-control left" data-slide="prev" href="#slideshow_1557773365274">
