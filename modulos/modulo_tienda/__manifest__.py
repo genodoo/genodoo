@@ -15,7 +15,7 @@
         'website_mail',
         'website_form',
         'website_rating',
-        'sale_management'
+        'sale_management',
         'point_of_sale'
     ],
     'data': [
