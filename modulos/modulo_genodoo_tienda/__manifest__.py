@@ -26,5 +26,6 @@
 	'templates/template_restaurante.xml',
 	'templates/template_tienda.xml',
     #'templates/view_formulario.xml',
+    'data/website_data.xml',
     ],
 }
