@@ -3,7 +3,7 @@
 # Guía de instalación
 
 ## Instalar Docker
-Para instalar la instación de GenOdoo vamos utilizar Docker y Docker-Compose. De esta manera nos aseguramos de que las dependencias son satisfechas y de que la instalación es tan sencilla como poner un comando.
+Para instalar GenOdoo vamos utilizar Docker y Docker-Compose. De esta manera nos aseguramos de que las dependencias son satisfechas y de que la instalación es tan sencilla como poner un comando.
 
 Por lo tanto, lo primero que vamos a necesitar es instalar docker. Dependiendo de tu sistema operativo la instalación es de una forma o otra. Pinchando [aquí](https://docs.docker.com/install/) podras ver cual es la manera de instalarlo en tu ordenador.
 
