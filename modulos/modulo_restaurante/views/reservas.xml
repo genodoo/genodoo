@@ -4,8 +4,7 @@
             <xpath expr="//div[@id='wrap']" position="replace">
                 <t t-call="website.layout">
                     <!-- A partir de aquí empieza tu código -->
-                    <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
-                    <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
+                     <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
                     <div id="wrap" class="oe_structure oe_empty" style="font-family: News Cycle; background-image:url(/modulo_restaurante/static/src/img/brick.jpg)">
                         <section class="s_image_text">
                             <div class="container">
@@ -30,21 +29,21 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="day">Día</label>
-                                                <input type="date" class="form-control" id="day" name="day"/>
+                                                <input type="date" style="font-family: Arial;line-height: 0.9" class="form-control" id="day" name="day"/>
                                             </div>
                                             <div>
                                                 <label for="hour">Hora</label>
-                                                <input type="time" class="form-control" id="hour" name="hour" min="13:00" max="22:00"/>
+                                                <input type="time" style="font-family: Arial;line-height: 0.9" class="form-control" id="hour" name="hour" min="13:00" max="22:00"/>
                                             </div>
                                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
                                             <button type="submit" class="btn btn-primary" style="margin:15px; background-color:#5a1922;border-color:white;border-radius:0;">RESERVAR</button>
                                         </form>
                                     </div>
-                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); height: 455px">
+                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); height: 513px">
                                         <center>
-                                            <img class="img img-responsive" style="filter: invert(100%); margin:17" src="/modulo_restaurante/static/src/img/cutlery.png" width="276" height="276"/>
+                                            <img class="img img-responsive" style="filter: invert(100%); margin:27" src="/modulo_restaurante/static/src/img/cutlery.png" width="296" height="296"/>
                                         </center>
-                                        <h2 class="o_default_snippet_text" style="font-family: Permanent Marker; font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
+                                        <h2 class="o_default_snippet_text" style="font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
                                         <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
                                             <font style="font-size: 18px;">
 Envíanos un formulario de contacto y te responderemos (normalmente en menos de 24 horas)
