@@ -10,7 +10,7 @@
 						    <div class="container">
 							<div class="row">
 							    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8)">
-								<form action="/bonos/submit" style="margin:10px" method="POST">
+								<form action="/thanksbono" style="margin:10px" method="POST">
 								    <div class="form-group">
 								        <label for="client_name">Nombre</label>
 								        <input type="name" class="form-control" id="client_name" name="client_name" placeholder="Introduce tu nombre"/>

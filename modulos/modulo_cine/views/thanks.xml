@@ -1,0 +1,38 @@
+<odoo>
+    <data>
+        <template id="bonosthanks">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="website.layout">
+                        <!-- A partir de aquí empieza tu código -->
+			<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Anton|Teko" rel="stylesheet"/>
+			      <div id="wrap" class="oe_structure oe_empty" style="font-family: Roboto; background-image:url(/modulo_cine/static/src/img/cine1.jpg)">
+				<section class="s_image_text">
+				  <div class="container">
+				    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); width:100%">
+				      <center>
+					<img src="/modulo_cine/static/src/img/cine2.png" style="filter: invert(100%)" width="226" height="226"/>
+				      </center>
+				      <h2 class="o_default_snippet_text" style="font-size: 30px; text-align:center; vertical-align:middle">
+					<font style="font-size: 48px; font-family:Anton">GRACIAS POR COMPRAR SU BONO</font>
+				      </h2>
+				      <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
+					<font style="font-size: 18px;">
+						                    Le enviaremos el recibo por correo lo antes posible.
+						               &amp;nbsp;</font>
+				      </p>
+				    </div>
+				  </div>
+				</section>
+                        <!-- Aquí termina tu código -->
+                    </div>
+                </t>
+            </xpath>
+        </template>
+		<record id="bonosthanks" model="website.page">
+			<field name="name">Gracias</field>
+			<field name="website_published">True</field>
+			<field name="url">/thanksbono</field>
+			<field name="view_id" ref="bonosthanks"/>
+		</record>
+    </data>
+</odoo>

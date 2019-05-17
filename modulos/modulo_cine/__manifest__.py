@@ -27,6 +27,7 @@
         'views/views.xml',
         'views/template.xml',
         'views/bono.xml',
+        'views/thanks.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
