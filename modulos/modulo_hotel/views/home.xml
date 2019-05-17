@@ -118,7 +118,7 @@
                             </p>
                         </div>
                         <div class="col-md-3">
-                            <a href="/reservashotel" class="pull-right mt8 btn btn-warning btn-lg" style="background-color: white; color: black; border-style: solid; border-radius:40px; border-width: 0px:; border-color:black" data-original-title="" title="">RESERVE SU HABITACIÓN</a>
+                            <a href="/book" class="pull-right mt8 btn btn-warning btn-lg" style="background-color: white; color: black; border-style: solid; border-radius:40px; border-width: 0px:; border-color:black" data-original-title="" title="">RESERVE SU HABITACIÓN</a>
                         </div>
                     </div>
                 </div>

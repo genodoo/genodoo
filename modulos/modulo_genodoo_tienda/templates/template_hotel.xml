@@ -89,7 +89,7 @@
           <p class="text-muted">
             <i>Instalación rápida, satisfecho o reembolso</i>
           </p>
-          <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+          <a href="/pedidos" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
         </div>
       </div>
     </div>
@@ -132,7 +132,7 @@
   <p class="text-muted">
     <i>Instalación rápida, satisfecho o reembolso</i>
   </p>
-  <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+  <a href="/pedidos" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
 </div>
 </div>
 </div>
@@ -175,7 +175,7 @@
   <p class="text-muted">
     <i>Instalación rápida, satisfecho o reembolso</i>
   </p>
-  <a href="/contactus" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
+  <a href="/pedidos" class="btn btn-danger btn-lg" style="background-color: orange" data-original-title="" title="">Pedir demo</a>
 </div>
 </div>
 </div>

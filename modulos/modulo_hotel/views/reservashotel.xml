@@ -9,7 +9,9 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.7); height: 455">
-                                        <form action="/website_form/book" style="margin:10px" method="POST">
+                                        <form action="/website_form/" method="post" data-force_action="book"
+                                            data-success_page="/" class="s_website_form mt32"
+                                            enctype="multipart/form-data" data-editable-form="false">
                                             <div class="form-group">
                                                 <label for="room_id">Habitación</label>
                                                 <select class="form-control" name="room_id" t-att-value="request.params.get('room_id', '')">
@@ -35,7 +37,16 @@
                                                 </div>
                                             </div>
                                             <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                            <button type="submit" class="btn btn-primary" style="margin:15px; background-color:#5a1922;border-color:white;border-radius:0;">RESERVAR</button>
+                                            <br/>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-md-12 text-center">
+                                                    <div class="form-group">
+                                                        <span class="btn btn-primary btn-lg o_website_form_send">Send</span>
+                                                        <span id="o_website_form_result"></span>
+                                                    </div>
+                                                </div>
+                                            </div>                                            
                                         </form>
                                         <!-- <form action="/website_form/" method="post" data-force_action="book" class="s_website_form mt32" senctype="multipart/form-data">
                                             <div class="row">

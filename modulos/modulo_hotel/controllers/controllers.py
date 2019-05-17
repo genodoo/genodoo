@@ -9,26 +9,22 @@ import logging
 _logger = logging.getLogger(__name__)
 
 
-class BookForm(http.Controller):
+class BookForm(WebsiteForm):
 
-    @http.route('/website_form/book', type="http", auth="public",
-                methods=["POST"], website=True)
+    @http.route('/website_form/book', type="http", auth="public", methods=["POST"], website=True)
     def book_form(self, **kw):
         ref = request.env["hotel.book"].search_count([]) + 1
         kw.update({'name': ref})
         if request.env['res.partner'].search_count([('name', '=', kw['customer_id'])]) == 0:
             request.env['res.partner'].create({'name': kw['customer_id']})
         kw['customer_id'] = request.env['res.partner'].search([('name', '=', kw['customer_id'])]).id
-        _logger.info("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
-        _logger.info(kw)
         book_id = request.env["hotel.book"].create(kw)
         return json.dumps({'id': book_id.id})
 
 
 class BookPage(http.Controller):
 
-    @http.route('/book', type="http", auth="public", methods=["GET"],
-                website=True)
+    @http.route('/book', type="http", auth="public", methods=["GET"], website=True)
     def book_page(self, **kw):
         rooms = request.env["hotel.room"].search([])
         return request.render('modulo_hotel.book_page_template', {
