@@ -21,7 +21,6 @@ class Reproducciones(models.Model):
     @api.model
     def create(self, values):
         pelicula = self.env['cine.pelicula'].search([("id", "=", values['pelicula_id'])])
-        sala = self.env['cine.sala'].search([("id", "=", values['sala_id'])])
         data = {
             'name': str(pelicula.name) + ' ' + str(values['datetime']),
             'image': pelicula.image,
@@ -31,7 +30,6 @@ class Reproducciones(models.Model):
             'categ_id': 1,
             'list_price': values['price'],
             'standard_price': values['price'],
-            'inventory_availability': sala.capacity
         }
         self.env["product.template"].create(data)
         return super(Reproducciones, self).create(values)
