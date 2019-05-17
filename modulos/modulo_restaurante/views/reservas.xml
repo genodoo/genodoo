@@ -1,126 +1,70 @@
 <odoo>
-	<data>
-		<template id="reservas">
-			<xpath expr="//div[@id='wrap']" position="replace">
-				<t t-call="website.layout">
-					<!-- A partir de aquí empieza tu código -->
-				 <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
-				    <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
-            <div id="wrap" class="oe_structure oe_empty" style="font-family: News Cycle; background-image:url(/modulo_restaurante/static/src/img/brick.jpg)">
-                <section class="s_image_text">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8)">
-                                <form action="/reservas/submit" style="margin:10px" method="POST">
-                                    <div class="form-group">
-                                        <label for="client_name">Nombre</label>
-                                        <input type="name" class="form-control" id="client_name" name="client_name" placeholder="Introduce tu nombre"/>
+    <data>
+        <template id="reservas">
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-call="website.layout">
+                    <!-- A partir de aquí empieza tu código -->
+                    <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css?family=Francois One|News Cycle|Permanent Marker" rel="stylesheet"/>
+                    <div id="wrap" class="oe_structure oe_empty" style="font-family: News Cycle; background-image:url(/modulo_restaurante/static/src/img/brick.jpg)">
+                        <section class="s_image_text">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8)">
+                                        <form action="/reservas/submit" style="margin:10px" method="POST">
+                                            <div class="form-group">
+                                                <label for="client_name">Nombre</label>
+                                                <input type="name" class="form-control" id="client_name" name="client_name" placeholder="Introduce tu nombre"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="phone_number">Teléfono</label>
+                                                <input type="tel" class="form-control" id="phone_number" name="phone_number" placeholder="Introduce tu número"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="client_email">Correo electrónico</label>
+                                                <input type="email" class="form-control" id="client_email" name="client_email" placeholder="Introduce tu correo"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="number_diners">Número de comensales</label>
+                                                <input type="number" class="form-control" id="number_diners" name="number_diners" placeholder="Introduce número de comensales"/>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="day">Día</label>
+                                                <input type="date" class="form-control" id="day" name="day"/>
+                                            </div>
+                                            <div>
+                                                <label for="hour">Hora</label>
+                                                <input type="time" class="form-control" id="hour" name="hour" min="13:00" max="22:00"/>
+                                            </div>
+                                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                            <button type="submit" class="btn btn-primary" style="margin:15px; background-color:#5a1922;border-color:white;border-radius:0;">RESERVAR</button>
+                                        </form>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="phone_number">Teléfono</label>
-                                        <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Introduce tu número"/>
+                                    <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); height: 455px">
+                                        <center>
+                                            <img class="img img-responsive" style="filter: invert(100%); margin:17" src="/modulo_restaurante/static/src/img/cutlery.png" width="276" height="276"/>
+                                        </center>
+                                        <h2 class="o_default_snippet_text" style="font-family: Permanent Marker; font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
+                                        <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
+                                            <font style="font-size: 18px;">
+Envíanos un formulario de contacto y te responderemos (normalmente en menos de 24 horas)
+si hay mesa disponible. En caso de no haberla, te facilitaremos algunas opciones similares.
+                                            </font>
+                                        </p>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="client_email">Correo electrónico</label>
-                                        <input type="email" class="form-control" id="client_email" name="client_email" placeholder="Introduce tu correo"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="number_diners">Número de comensales</label>
-                                        <input type="number" class="form-control" id="number_diners" name="number_diners" placeholder="Introduce número de comensales"/>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="day">Día</label>
-                                        <select id="day" name="day" style="background:white; color:black">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                            <option>6</option>
-                                            <option>7</option>
-                                            <option>8</option>
-                                            <option>9</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                            <option>13</option>
-                                            <option>14</option>
-                                            <option>15</option>
-                                            <option>16</option>
-                                            <option>17</option>
-                                            <option>18</option>
-                                            <option>19</option>
-                                            <option>20</option>
-                                            <option>21</option>
-                                            <option>22</option>
-                                            <option>23</option>
-                                            <option>24</option>
-                                            <option>25</option>
-                                            <option>26</option>
-                                            <option>27</option>
-                                            <option>28</option>
-                                            <option>29</option>
-                                            <option>30</option>
-                                            <option>31</option>
-                                        </select>
-                                        <label for="month">Mes</label>
-                                        <select id="month" name="month" style="background:white; color:black">
-                                            <option>Enero</option>
-                                            <option>Febrero</option>
-                                            <option>Marzo</option>
-                                            <option>Abril</option>
-                                            <option>Mayo</option>
-                                            <option>Junio</option>
-                                            <option>Julio</option>
-                                            <option>Agosto</option>
-                                            <option>Septiembre</option>
-                                            <option>Octubre</option>
-                                            <option>Noviembre</option>
-                                            <option>Diciembre</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="hour">Hora</label>
-                                        <select id="hour" name="hour" style="background:white; color:black">
-                                            <option>13:00</option>
-                                            <option>14:00</option>
-                                            <option>15:00</option>
-                                            <option>16:00</option>
-                                            <option>17:00</option>
-                                            <option>20:00</option>
-                                            <option>21:00</option>
-                                            <option>22:00</option>
-                                        </select>
-                                    </div>
-                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
-                                    <button type="submit" class="btn btn-primary" style="margin:15px; background-color:#5a1922;border-color:white;border-radius:0;">RESERVAR</button>
-                                </form>
+                                </div>
                             </div>
-                            <div class="col-md-6 mt32 mb32" style="color: white;background:rgba(0,0,0,0.8); height: 455px">
-                                <center>
-                                    <img class="img img-responsive" style="filter: invert(100%); margin:17" src="/modulo_restaurante/static/src/img/cutlery.png" width="276" height="276"/>
-                                </center>
-                                <h2 class="o_default_snippet_text" style="font-family: Permanent Marker; font-size: 30px;text-align:center; vertical-align:middle">RESERVA TU MESA</h2>
-                                <p class="o_default_snippet_text" style="text-align:center; vertical-align:middle">
-                                    <font style="font-size: 18px;">
-				Envíanos un formulario de contacto y te responderemos (normalmente en menos de 24 horas)
-				si hay mesa disponible. En caso de no haberla, te facilitaremos algunas opciones similares.
-														</font>
-                                </p>
-                            </div>
-                        </div>
+                        </section>
+                        <!-- Aquí termina tu código -->
                     </div>
-                </section>
-						<!-- Aquí termina tu código -->
-					</div>
-				</t>
-			</xpath>
-		</template>
-		<record id="reservasid" model="website.page">
-			<field name="name">Reservas</field>
-			<field name="website_published">True</field>
-			<field name="url">/reservas</field>
-			<field name="view_id" ref="reservas"/>
-		</record>
-	</data>
+                </t>
+            </xpath>
+        </template>
+        <record id="reservasid" model="website.page">
+            <field name="name">Reservas</field>
+            <field name="website_published">True</field>
+            <field name="url">/reservas</field>
+            <field name="view_id" ref="reservas"/>
+        </record>
+    </data>
 </odoo>

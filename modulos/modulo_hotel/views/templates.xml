@@ -1,22 +1,41 @@
-<odoo>
+<!-- <odoo>
     <data>
-        <!-- <template id="listing"> -->
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
-        <!-- </template> -->
+        <template id="book_page_template">
+            <t t-call="website.layout">
+                <div id="wrap">
+                    <div class="oe_structure"/>
+                    <div class="container">
+                        <form action="/website_form/" method="post" data-force_action="book"
+                        class="s_website_form mt32" senctype="multipart/form-data"
+                        data-editable-form="false">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input class="form-control" type="date" name="date_in" required="" t-att-value="request.params.get('date_in', '')"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input class="form-control" type="date" name="date_out" required="" t-att-value="request.params.get('date_out', '')"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <select class="form-control" name="room_id" t-att-value="request.params.get('room_id', '')">
+                                    <t t-foreach="rooms" t-as="room">
+                                        <option t-attf-value="{{room.id}}"><t t-esc="room.name"/></option>
+                                    </t>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 text-center">
+                                    <div class="form-group">
+                                        <span class="btn btn-primary btn-lg o_website_form_send">Send</span>
+                                        <span id="o_website_form_result"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="oe_structure"/>
+                </div>
+            </t>
+        </template>
     </data>
-</odoo>
+</odoo> -->

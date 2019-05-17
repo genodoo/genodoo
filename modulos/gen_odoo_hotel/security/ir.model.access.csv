@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_gen_odoo_hotel_gen_odoo_hotel,gen_odoo_hotel.gen_odoo_hotel,model_gen_odoo_hotel_gen_odoo_hotel,,1,0,0,0
