@@ -3,24 +3,23 @@
     <data>
         <template id="Pagina_pedidos">
             <t t-call="website.layout">
-                <div id="wrap">
+                 <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"/>
+                <div id="wrap" style="font-family: Lato ;background-image: url(/modulo_genodoo/static/src/img/fondo.png)">
                     <div class="oe_structure"/>
-                    <div class="container">
-                        <form action="/website_form/" method="post" data-force_action="pedidos"
-                            data-success_page="/" class="s_website_form mt32"
-                            enctype="multipart/form-data" data-editable-form="false">
+                    <div class="container"  style="background-color: rgba(255,255,255,0.8)">
+                        <form action="/website_form/" method="post" data-force_action="pedidos" data-success_page="/" class="s_website_form mt32" enctype="multipart/form-data" data-editable-form="false">
                             <div class="row">
                                 <div class="col-md-6">
                                     <label class="control-label" for="name">Nombre</label>
-                                    <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')" />
+                                    <input type="text" class="form-control o_website_form_input" name="name" required="" t-att-value="request.params.get('name', '')"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="control-label" for="correo">Correo</label>
-                                    <input type="email" class="form-control o_website_form_input" name="correo" required="" t-att-value="request.params.get('correo', '')" />
+                                    <input type="email" class="form-control o_website_form_input" name="correo" required="" t-att-value="request.params.get('correo', '')"/>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="control-label" for="telefono">Telefono</label>
-                                    <input type="email" class="form-control o_website_form_input" name="telefono" required="" t-att-value="request.params.get('telefono', '')" />
+                                    <input type="email" class="form-control o_website_form_input" name="telefono" required="" t-att-value="request.params.get('telefono', '')"/>
                                 </div>
                             </div>
                             <br/>
@@ -28,7 +27,7 @@
                             <div class="row">
                                 <div class="col-md-6">
                                     <label class="control-label" for="modulo">Paquete Deseado</label>
-                                    <select class="form-control" name="modulo" required="" t-att-value="request.params.get('modulo', '')" >
+                                    <select class="form-control" name="modulo" required="" t-att-value="request.params.get('modulo', '')">
                                         <option t-attf-value="tienda">Tienda</option>
                                         <option t-attf-value="resta">Restaurante</option>
                                         <option t-attf-value="hotel">Hotel</option>
@@ -38,7 +37,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <label class="control-label" for="tarifa">Tarifa</label>
-                                    <select class="form-control" name="tarifa" required="" t-att-value="request.params.get('tarifa', '')" >
+                                    <select class="form-control" name="tarifa" required="" t-att-value="request.params.get('tarifa', '')">
                                         <option t-attf-value="base">Basico</option>
                                         <option t-attf-value="avan">Avanzado</option>
                                         <option t-attf-value="expe">Experto</option>
@@ -58,15 +57,14 @@
                             <div class="row">
                                 <div class="col-md-12 text-center">
                                     <div class="form-group">
-                                        <span class="btn btn-primary btn-lg o_website_form_send">Send</span>
-                                        <span id="o_website_form_result"></span>
+                                        <span class="btn btn-primary btn-lg o_website_form_send" style="background-color: orange; border-radius: 30px; border-color: orange">ENVIAR</span>
+                                        <span id="o_website_form_result"/>
                                     </div>
                                 </div>
                             </div>
 
                         </form>
                     </div>
-                    <div class="oe_structure"/>
                 </div>
             </t>
         </template>
